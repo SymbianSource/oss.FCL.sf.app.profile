@@ -1,0 +1,571 @@
+/*
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Common part of Profiles Settings View/Profiles GS Tones view
+*                plugin resources. Note, that this should always be compiled as
+*                a part of resources (settings view or plugin).
+*
+*/
+
+#include <mediafilelist.loc>
+
+//  RESOURCE DEFINITIONS
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_empty_popup_setting_list_control
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE POPUP_SETTING_LIST r_profile_empty_popup_setting_list_control
+    {
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_ringing_type_setting_page
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE AVKON_SETTING_PAGE r_profile_ringing_type_setting_page
+    {
+    label = qtn_mode_ringing_type_2;
+    softkey_resource = R_AVKON_SOFTKEYS_OK_CANCEL__OK;
+    type = EAknCtPopupSettingList;
+    editor_resource_id = r_profile_empty_popup_setting_list_control;
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_ringing_type_setting_texts
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE AVKON_POPUP_SETTING_TEXTS r_profile_ringing_type_setting_texts
+    {
+    setting_texts_resource = r_profile_ringing_type_texts_and_values;
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_ringing_type_texts_and_values
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE ARRAY r_profile_ringing_type_texts_and_values
+    {
+    items =
+        {
+        AVKON_ENUMERATED_TEXT { value = EProfileRingingTypeRinging;     text = qtn_tc_ringing; },
+        AVKON_ENUMERATED_TEXT { value = EProfileRingingTypeAscending;   text = qtn_tc_ascending; },
+        AVKON_ENUMERATED_TEXT { value = EProfileRingingTypeRingingOnce; text = qtn_tc_ring_once; },
+        AVKON_ENUMERATED_TEXT { value = EProfileRingingTypeBeepOnce;    text = qtn_tc_beep_once; }
+//CDMA doesn't have silent ringingtype
+#ifndef __PROTOCOL_CDMA
+       ,AVKON_ENUMERATED_TEXT { value = EProfileRingingTypeSilent;      text = qtn_tc_silent; }
+#endif
+        };
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_ringing_volume_setting_page
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE AVKON_SETTING_PAGE r_profile_ringing_volume_setting_page
+    {
+    label = qtn_mode_ringing_volume;
+    softkey_resource = R_AVKON_SOFTKEYS_OK_CANCEL__OK;
+    type = EAknCtVolumeControl;
+    editor_resource_id = r_profile_ringing_volume_control;
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_ringing_volume_control
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE VOLUME r_profile_ringing_volume_control
+    {
+    flags = ESettingsVolumeControl;
+    value = 7; // Has to have a value, otherwise crashes
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_vibrating_alert_setting_page
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE AVKON_SETTING_PAGE r_profile_vibrating_alert_setting_page
+    {
+    label = qtn_mode_vibrating_alert;
+    softkey_resource = R_AVKON_SOFTKEYS_OK_CANCEL__OK;
+    type = EAknCtPopupSettingList;
+    editor_resource_id = r_profile_empty_popup_setting_list_control;
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_vibrating_alert_setting_texts
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE AVKON_POPUP_SETTING_TEXTS r_profile_vibrating_alert_setting_texts
+    {
+    setting_texts_resource = r_profile_vibrating_alert_texts_and_values;
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_vibrating_alert_texts_and_values
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE ARRAY r_profile_vibrating_alert_texts_and_values
+    {
+    items =
+        {
+        AVKON_ENUMERATED_TEXT { value = 1;  text = qtn_mode_vibrating_alert_on; },
+        AVKON_ENUMERATED_TEXT { value = 0;  text = qtn_mode_vibrating_alert_off; }
+        };
+    }
+
+RESOURCE AVKON_SETTING_PAGE r_profile_email_vibrating_alert_setting_page
+    {
+    label =qtn_profiles_email_vibra;
+    softkey_resource = R_AVKON_SOFTKEYS_OK_CANCEL__OK;
+    type = EAknCtPopupSettingList;
+    editor_resource_id = r_profile_empty_popup_setting_list_control;
+    }
+// -----------------------------------------------------------------------------
+//
+// r_profile_vibrating_email_alert_setting_texts
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE AVKON_POPUP_SETTING_TEXTS r_profile_email_vibrating_alert_setting_texts
+    {
+    setting_texts_resource = r_profile_email_vibrating_alert_texts_and_values;
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_email_vibrating_alert_texts_and_values
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE ARRAY r_profile_email_vibrating_alert_texts_and_values
+    {
+    items =
+        {
+        AVKON_ENUMERATED_TEXT { value = 1;  text = qtn_mode_email_vibra_on; },
+        AVKON_ENUMERATED_TEXT { value = 0;  text = qtn_mode_email_vibra_off; }
+        };
+    }
+// -----------------------------------------------------------------------------
+//
+// r_profile_tactile_feedback_setting_page
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE AVKON_SETTING_PAGE r_profile_tactile_feedback_setting_page
+    {
+    label = qtn_mode_tactile_feedback;
+    softkey_resource = R_AVKON_SOFTKEYS_OK_CANCEL__OK;
+    type = EAknCtPopupSettingList;
+    editor_resource_id = r_profile_empty_popup_setting_list_control;
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_tactile_feedback_setting_texts
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE AVKON_POPUP_SETTING_TEXTS r_profile_tactile_feedback_setting_texts
+    {
+    setting_texts_resource = r_profile_tactile_feedback_texts_and_values;
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_tactile_feedback_texts_and_values
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE ARRAY r_profile_tactile_feedback_texts_and_values
+    {
+    items =
+        {
+        AVKON_ENUMERATED_TEXT { value = EProfileTactileFeedbackOff;    text = qtn_mode_tactile_feedback_off; },
+        AVKON_ENUMERATED_TEXT { value = EProfileTactileFeedbackLevel1; text = qtn_mode_tactile_feedback_level1; },
+        AVKON_ENUMERATED_TEXT { value = EProfileTactileFeedbackLevel2; text = qtn_mode_tactile_feedback_level2; },
+        AVKON_ENUMERATED_TEXT { value = EProfileTactileFeedbackLevel3; text = qtn_mode_tactile_feedback_level3; }
+        };
+    }
+// -----------------------------------------------------------------------------
+//
+// r_profile_audio_feedback_setting_page
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE AVKON_SETTING_PAGE r_profile_audio_feedback_setting_page
+    {
+    label = qtn_mode_audio_feedback;
+    softkey_resource = R_AVKON_SOFTKEYS_OK_CANCEL__OK;
+    type = EAknCtPopupSettingList;
+    editor_resource_id = r_profile_empty_popup_setting_list_control;
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_audio_feedback_setting_texts
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE AVKON_POPUP_SETTING_TEXTS r_profile_audio_feedback_setting_texts
+    {
+    setting_texts_resource = r_profile_audio_feedback_texts_and_values;
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_audio_feedback_texts_and_values
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE ARRAY r_profile_audio_feedback_texts_and_values
+    {
+    items =
+        {
+        AVKON_ENUMERATED_TEXT { value = EProfileAudioFeedbackOff;    text = qtn_mode_audio_feedback_off; },
+        AVKON_ENUMERATED_TEXT { value = EProfileAudioFeedbackLevel1; text = qtn_mode_audio_feedback_level1; },
+        AVKON_ENUMERATED_TEXT { value = EProfileAudioFeedbackLevel2; text = qtn_mode_audio_feedback_level2; },
+        AVKON_ENUMERATED_TEXT { value = EProfileAudioFeedbackLevel3; text = qtn_mode_audio_feedback_level3; }
+        };
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_warning_alert_setting_texts
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE AVKON_POPUP_SETTING_TEXTS r_profile_warning_alert_setting_texts
+    {
+    setting_texts_resource = r_profile_warning_alert_texts_and_values;
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_warning_alert_texts_and_values
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE ARRAY r_profile_warning_alert_texts_and_values
+    {
+    items =
+        {
+        AVKON_ENUMERATED_TEXT { value = 1;  text = qtn_mode_warning_game_on; },
+        AVKON_ENUMERATED_TEXT { value = 0;  text = qtn_mode_warning_game_off; }
+        };
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_tts_setting_texts
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE AVKON_POPUP_SETTING_TEXTS r_profile_tts_setting_texts
+    {
+    setting_texts_resource = r_profile_tts_texts_and_values;
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_tts_texts_and_values
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE ARRAY r_profile_tts_texts_and_values
+    {
+    items =
+        {
+        AVKON_ENUMERATED_TEXT { value = 1;  text = qtn_mode_tts_ringing_tone_on; },
+        AVKON_ENUMERATED_TEXT { value = 0;  text = qtn_mode_tts_ringing_tone_off; }
+        };
+    }
+// -----------------------------------------------------------------------------
+//
+// r_profile_keypad_volume_setting_page
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE AVKON_SETTING_PAGE r_profile_keypad_volume_setting_page
+    {
+    label = qtn_mode_keypad_volume;
+    softkey_resource = R_AVKON_SOFTKEYS_OK_CANCEL__OK;
+    type = EAknCtPopupSettingList;
+    editor_resource_id = r_profile_empty_popup_setting_list_control;
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_keypad_volume_setting_texts
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE AVKON_POPUP_SETTING_TEXTS r_profile_keypad_volume_setting_texts
+    {
+    setting_texts_resource = r_profile_keypad_volume_texts_and_values;
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_keypad_volume_texts_and_values
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE ARRAY r_profile_keypad_volume_texts_and_values
+    {
+    items =
+        {
+        AVKON_ENUMERATED_TEXT { value = EProfileKeypadVolumeOff;    text = qtn_tc_keypad_off; },
+        AVKON_ENUMERATED_TEXT { value = EProfileKeypadVolumeLevel1; text = qtn_tc_keypad_quiet; },
+        AVKON_ENUMERATED_TEXT { value = EProfileKeypadVolumeLevel2; text = qtn_tc_keypad_medium; },
+        AVKON_ENUMERATED_TEXT { value = EProfileKeypadVolumeLevel3; text = qtn_tc_keypad_loud; }
+        };
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_warning_tones_setting_page
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE AVKON_SETTING_PAGE r_profile_warning_tones_setting_page
+    {
+    label = qtn_mode_warning_game;
+    softkey_resource = R_AVKON_SOFTKEYS_OK_CANCEL__OK;
+    type = EAknCtPopupSettingList;
+    editor_resource_id = r_profile_empty_popup_setting_list_control;
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_tts_tones_setting_page
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE AVKON_SETTING_PAGE r_profile_tts_tones_setting_page
+    {
+    label = qtn_mode_tts_ringing_tone;
+    softkey_resource = R_AVKON_SOFTKEYS_OK_CANCEL__OK;
+    type = EAknCtPopupSettingList;
+    editor_resource_id = r_profile_empty_popup_setting_list_control;
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_3d_effect_setting_page
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE AVKON_SETTING_PAGE r_profile_3d_effect_setting_page
+    {
+    label = qtn_profiles_tone_3d_effect;
+    softkey_resource = R_AVKON_SOFTKEYS_OK_CANCEL__OK;
+    type = EAknCtPopupSettingList;
+    editor_resource_id = r_profile_empty_popup_setting_list_control;
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_3d_effect_setting_texts
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE AVKON_POPUP_SETTING_TEXTS r_profile_3d_effect_setting_texts
+    {
+    setting_texts_resource = r_profile_3d_effect_texts_and_values;
+    }
+   
+// -----------------------------------------------------------------------------
+//
+// r_profile_3d_effect_texts_and_values
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE ARRAY r_profile_3d_effect_texts_and_values
+    {
+    items =
+        {
+        AVKON_ENUMERATED_TEXT { value = EProfile3DEffectOff;     text = qtn_profiles_3d_effect_off; },
+        AVKON_ENUMERATED_TEXT { value = EProfile3DEffectCircle;  text = qtn_profiles_3d_effect_circle; },
+        AVKON_ENUMERATED_TEXT { value = EProfile3DEffectFlyby;  text = qtn_profiles_3d_effect_flyby; },
+        AVKON_ENUMERATED_TEXT { value = EProfile3DEffectZigZag;  text = qtn_profiles_3d_effect_zig_zag; },
+        AVKON_ENUMERATED_TEXT { value = EProfile3DEffectRandomWalk;  text = qtn_profiles_3d_effect_random_walk; },
+        AVKON_ENUMERATED_TEXT { value = EProfile3DEffectChaos;  text = qtn_profiles_3d_effect_chaos; }
+
+#ifdef __STEREO_WIDENING_EFFECT_UI
+        ,AVKON_ENUMERATED_TEXT { value = EProfile3DEffectStereoWidening;  text = qtn_profiles_3d_effect_stereo_widening; }
+#endif
+
+        };
+    }    
+    
+// -----------------------------------------------------------------------------
+//
+// r_profile_3d_echo_setting_page
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE AVKON_SETTING_PAGE r_profile_3d_echo_setting_page
+    {
+    label = qtn_profiles_tone_3d_echo;
+    softkey_resource = R_AVKON_SOFTKEYS_OK_CANCEL__OK;
+    type = EAknCtPopupSettingList;
+    editor_resource_id = r_profile_empty_popup_setting_list_control;
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_3d_echo_setting_texts
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE AVKON_POPUP_SETTING_TEXTS r_profile_3d_echo_setting_texts
+    {
+    setting_texts_resource = r_profile_3d_echo_texts_and_values;
+    }
+   
+// -----------------------------------------------------------------------------
+//
+// r_profile_3d_echo_texts_and_values
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE ARRAY r_profile_3d_echo_texts_and_values
+    {
+    items =
+        {
+        AVKON_ENUMERATED_TEXT { value = EProfile3DEchoOff;     text = qtn_profiles_3d_echo_off; },
+        AVKON_ENUMERATED_TEXT { value = EProfile3DEchoLivingRoom;  text = qtn_profiles_3d_echo_living_room; },
+        AVKON_ENUMERATED_TEXT { value = EProfile3DEchoCave;  text = qtn_profiles_3d_echo_cave; },
+        AVKON_ENUMERATED_TEXT { value = EProfile3DEchoStoneCorridor;  text = qtn_profiles_3d_echo_stone_corridor; },
+        AVKON_ENUMERATED_TEXT { value = EProfile3DEchoForest;  text = qtn_profiles_3d_echo_forest; },
+        AVKON_ENUMERATED_TEXT { value = EProfile3DEchoSewerPipe;  text = qtn_profiles_3d_echo_sewer_pipe; },
+        AVKON_ENUMERATED_TEXT { value = EProfile3DEchoUnderwater;  text = qtn_profiles_3d_echo_underwater; }
+        };
+    }    
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_volume_confirmation_query
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE DIALOG r_profile_volume_confirmation_query
+    {
+    flags = EGeneralQueryFlags;
+    buttons = R_AVKON_SOFTKEYS_YES_NO;
+    items=
+        {
+        DLG_LINE
+            {
+            type = EAknCtQuery;
+            id = EGeneralQuery;
+            control = AVKON_CONFIRMATION_QUERY
+                {
+                layout = EConfirmationQueryLayout;
+                label = qtn_tc_ringing_level_warning;
+                };
+            }
+        };
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_text_select_tone
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE TBUF r_profile_text_select_tone { buf = qtn_tc_popup_heading; }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_text_none
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE TBUF r_profile_text_none { buf = qtn_tsl_off; }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_text_drm_prev_rights_set
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE TBUF r_profile_text_drm_prev_rights_set { buf = qtn_drm_prev_rights_set; }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_text_tone_maxsize_error
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE TBUF r_profile_text_tone_maxsize_error { buf = qtn_profiles_tone_maxsize_error; }
+	
+// End of File
+

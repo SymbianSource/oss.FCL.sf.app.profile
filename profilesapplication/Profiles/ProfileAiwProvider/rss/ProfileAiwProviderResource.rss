@@ -1,0 +1,150 @@
+/*
+* Copyright (c) 2002 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  ProfileAiwProvider resources
+*
+*/
+
+
+//  RESOURCE IDENTIFIER
+NAME    AIPP 
+
+// INTERNAL INCLUDES
+#include <profileaiwprovider.loc>
+#include <profileapp.loc>	// For qtn_profiles_tone_maxsize_error
+
+// EXTERNAL INCLUDES
+#include <eikon.rh>	// For RESOURCE MENU_PANE
+#include <AiwCommon.hrh> // For KAiwCmdView
+#include <avkon.loc>	// For text_not_allowed
+
+//  RESOURCE DEFINITIONS
+
+RESOURCE RSS_SIGNATURE { }
+    
+// -----------------------------------------------------------------------------
+//
+// r_profileaiwprovider_menu
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE MENU_PANE r_profileaiwprovider_menu
+    {
+    items=
+        {
+        MENU_ITEM
+            {
+            command = KAiwCmdAssign;
+            txt = qtn_mg_options_set_as_rt;
+            }
+        };
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_profileaiwprovider_info_tone_drm_protected
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE TBUF r_profileaiwprovider_info_tone_drm_protected
+	{
+	buf = qtn_profiles_info_tone_drm_protected;
+	}   
+
+// -----------------------------------------------------------------------------
+//
+// r_profileaiwprovider_text_not_allowed
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE TBUF r_profileaiwprovider_text_not_allowed
+	{
+	buf = text_not_allowed;
+	}
+	
+// -----------------------------------------------------------------------------
+//
+// r_profileaiwprovider_info_tone_no_drm
+// ?description
+//
+// -----------------------------------------------------------------------------
+//	
+RESOURCE TBUF r_profileaiwprovider_info_tone_no_drm	
+	{
+	buf = qtn_profiles_info_tone_no_drm;
+	}
+
+// -----------------------------------------------------------------------------
+//
+// r_profileaiwprovider_query_select_profiles
+// ?description
+//
+// -----------------------------------------------------------------------------
+//	
+RESOURCE TBUF r_profileaiwprovider_query_select_profiles
+	{
+	buf = qtn_profiles_query_select_profiles;
+	}
+	
+// -----------------------------------------------------------------------------
+//
+// r_profileaiwprovider_info_mime_type_not_supported
+// ?description
+//
+// -----------------------------------------------------------------------------
+//	
+RESOURCE TBUF r_profileaiwprovider_info_mime_type_not_supported
+	{
+	buf = qtn_profiles_info_mime_type_not_supported;
+	}	
+
+// -----------------------------------------------------------------------------
+//
+// r_profileaiwprovider_confirm_ringtone_changed
+// ?description
+//
+// -----------------------------------------------------------------------------
+//	
+RESOURCE TBUF r_profileaiwprovider_confirm_ringtone_changed
+	{
+	buf = qtn_profiles_confirm_ringtone_changed;
+	}
+	
+// -----------------------------------------------------------------------------
+//
+// r_profileaiwprovider_tone_maxsize_error
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE TBUF r_profileaiwprovider_tone_maxsize_error
+	{
+	buf = qtn_profiles_tone_maxsize_error;
+	}
+	
+// -----------------------------------------------------------------------------
+//
+// r_profileaiwprovider_confirm_ringtone_copied
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE TBUF r_profileaiwprovider_confirm_ringtone_copied
+	{
+	buf = qtn_profiles_info_remote_drive_copy;
+	}
+
+// End of File

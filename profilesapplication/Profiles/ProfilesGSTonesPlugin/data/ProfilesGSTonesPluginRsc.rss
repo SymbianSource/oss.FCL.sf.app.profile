@@ -1,0 +1,355 @@
+/*
+* Copyright (c) 2005 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:    Resource file for plugin.
+*
+*/
+
+
+//  RESOURCE IDENTIFIER
+NAME    TNVW // 4 letter ID
+
+//  INCLUDES
+//#include    "GSPrslnPlugin.loc"
+
+#include    <data_caging_paths_strings.hrh>
+#include    <bldvariant.hrh>
+#include    <avkon.loc> // Avkon localized strings
+#include <profile.hrh>
+#include <profilesettingsview.hrh>
+#include <profileinternal.hrh>
+#include <ProfileEng.hrh>
+#include <eikon.rh>
+#include <avkon.rh>
+#include    <avkon.mbg>
+#include    <avkon.rsg>
+#include    <eikcore.rsg>
+#include    <uikon.rh>
+#include    "ProfilesGsTonesPlugin.hrh"
+#include    <ProfilesGsTonesPlugin.loc>
+#include    <ProfileApp.loc>
+// FileListModel path definitions
+#include <PathConfiguration.hrh>
+// FileListModel structure
+#include <filelistmodel.rh>
+
+// CONSTANTS
+
+//  RESOURCE DEFINITIONS
+
+//----------------------------------------------------
+//
+//
+//    Needed or loading the resource fails!
+//
+//----------------------------------------------------
+//
+RESOURCE RSS_SIGNATURE
+    {
+    }
+
+// Include the common part of the resources (of application and plugin):
+#include    "ProfileSettingsViewCommon.rss"
+
+//----------------------------------------------------
+//
+//    r_profiles_gs_tones_view
+//    Tones view.
+//
+//----------------------------------------------------
+//
+RESOURCE AVKON_VIEW r_profiles_gs_tones_view
+    {
+    menubar = r_profiles_gs_options_menubar;
+    cba = r_profiles_gs_tones_view_softkeys_options_back_change;
+    }
+
+//----------------------------------------------------
+//
+//    r_profiles_gs_tones_view_softkeys_options_back_change
+//    Tones view cba.
+//
+//----------------------------------------------------
+//
+RESOURCE CBA r_profiles_gs_tones_view_softkeys_options_back_change
+    {
+    flags = 0;
+    buttons =
+        {
+        CBA_BUTTON {id=EAknSoftkeyOptions; txt=text_softkey_option;},
+        CBA_BUTTON {id=EAknSoftkeyBack; txt=text_softkey_back;},
+        CBA_BUTTON {id=EAknSoftkeyChange; txt=qtn_msk_change;}
+        };
+    }
+
+//----------------------------------------------------
+//
+//    r_profiles_gs_tones_view_title
+//    Tones view title.
+//
+//----------------------------------------------------
+//
+RESOURCE TBUF r_profiles_gs_tones_view_title
+    {
+    buf = qtn_set_title_pers_tones;
+    }
+
+//----------------------------------------------------
+//
+//    r_profiles_gs_tones_view_caption
+//    Tones view caption for plugin
+//
+//----------------------------------------------------
+//
+RESOURCE TBUF r_profiles_gs_tones_view_caption
+    {
+    buf = qtn_set_pers_tones;
+    }
+
+//----------------------------------------------------
+//
+//    r_profiles_gs_tones_view_updated_note
+//    Active profile changed. View updated -note
+//
+//----------------------------------------------------
+//
+RESOURCE TBUF r_profiles_gs_tones_view_updated_note
+    {
+    buf = qtn_profiles_info_tones_view_updated;
+    }
+
+//----------------------------------------------------
+//   
+//    r_profiles_gs_options_menubar
+//    Options menu with 'Change' and 'Exit' items.
+//
+//----------------------------------------------------
+//
+RESOURCE MENU_BAR r_profiles_gs_options_menubar
+    {
+    titles =
+        {
+        MENU_TITLE 
+            { 
+            menu_pane = r_profiles_gs_options_menupane;
+            }
+        };
+    }
+ 
+//----------------------------------------------------
+//   
+//    r_profiles_gs_menu_item_change
+//    Options menu item 'Change'.
+//
+//----------------------------------------------------
+//
+RESOURCE MENU_PANE r_profiles_gs_menu_item_change
+    {
+    items =
+        {
+        MENU_ITEM 
+            {
+            command = EProfilesGsTonesCmdChange;
+            txt = qtn_options_change;
+            }
+        };
+    }
+
+//----------------------------------------------------
+//   
+//    r_profiles_gs_options_menupane
+//    Options menu of GS tones view
+//
+//----------------------------------------------------
+//
+RESOURCE MENU_PANE r_profiles_gs_options_menupane
+    {
+    items =
+        {
+        MENU_ITEM 
+            {
+            command = EProfilesGsTonesCmdChange;
+            txt = qtn_options_change;
+            },
+        MENU_ITEM
+            {
+            command = EAknCmdHelp;
+            txt = qtn_options_help;
+            },
+        MENU_ITEM 
+            {
+            command = EAknCmdExit;
+            txt = qtn_options_exit;
+            }
+        };
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_gs_tones_view_setting_item_list
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE AVKON_SETTING_ITEM_LIST r_profile_gs_tones_view_setting_item_list
+    {
+    items =
+        {
+        AVKON_SETTING_ITEM
+            {
+            identifier = EProfileSettingRingingToneId;
+            name = qtn_mode_ringing_tone;
+            },
+        AVKON_SETTING_ITEM
+            {
+            identifier = EProfileSettingRingingToneLine1Id;
+            name = qtn_mode_line1_tone;
+            },
+        AVKON_SETTING_ITEM
+            {
+            identifier = EProfileSettingRingingToneLine2Id;
+            name = qtn_mode_line2_tone;
+            },
+        AVKON_SETTING_ITEM
+            {
+            identifier = EProfileSettingVideoCallToneId;
+            name = qtn_mode_vt_tone;
+            },
+		AVKON_SETTING_ITEM
+	    	{
+	    	identifier = EProfileSettingTTSRingingToneId;
+	    	name = qtn_mode_tts_ringing_tone;
+	    	setting_page_resource = r_profile_tts_tones_setting_page;
+	    	associated_resource = r_profile_tts_setting_texts;
+            },
+        AVKON_SETTING_ITEM
+            {
+            identifier = EProfileSettingRingingTypeId;
+            name = qtn_mode_ringing_type_2;
+            setting_page_resource = r_profile_ringing_type_setting_page;
+            associated_resource = r_profile_ringing_type_setting_texts;
+            },
+        AVKON_SETTING_ITEM
+            {
+            identifier = EProfileSettingRingingVolumeId;
+            name = qtn_mode_ringing_volume;
+            setting_page_resource = r_profile_ringing_volume_setting_page;
+            },
+        AVKON_SETTING_ITEM
+            {
+            identifier = EProfileSettingMessageAlertToneId;
+            name = qtn_mode_message_tone;
+            },
+        AVKON_SETTING_ITEM
+            {
+            identifier = EProfileSettingEmailAlertToneId;
+            name = qtn_profiles_e_mail_tone;
+            },
+        AVKON_SETTING_ITEM
+            {
+            identifier = EProfileGSTonesPluginSettingCalendarToneId;
+            name = qtn_profiles_calendar_tone;
+            },
+        AVKON_SETTING_ITEM
+            {
+            identifier = EProfileGSTonesPluginSettingClockToneId;
+            name = qtn_profiles_clock_tone;
+            },
+        AVKON_SETTING_ITEM
+            {
+            identifier = EProfileSettingVibratingAlertId;
+            name = qtn_mode_vibrating_alert;
+            setting_page_resource = r_profile_vibrating_alert_setting_page;
+            associated_resource = r_profile_vibrating_alert_setting_texts;
+            },
+        AVKON_SETTING_ITEM
+            {
+            identifier = EProfileSettingKeypadVolumeId;
+            name = qtn_mode_keypad_volume;
+            setting_page_resource = r_profile_keypad_volume_setting_page;
+            associated_resource = r_profile_keypad_volume_setting_texts;
+            },
+        AVKON_SETTING_ITEM
+            {
+            identifier = EProfileSettingWarningAndGameTonesId;
+            name = qtn_mode_warning_game;
+            setting_page_resource = r_profile_warning_tones_setting_page;
+            associated_resource = r_profile_warning_alert_setting_texts;
+            },
+        AVKON_SETTING_ITEM
+            {
+            identifier = EProfileGSTonesPluginSettingHacModeId;
+            name = qtn_set_audio_hac_mode;
+            setting_page_resource = r_profile_hac_mode_setting_page;
+            associated_resource = r_profile_hac_mode_setting_texts;
+            }
+        };
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_qtn_no_personal_tone
+// Default tone text used in Calendar/Clock alarm tone selection list.
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE TBUF r_qtn_no_personal_tone
+    {
+    buf = qtn_tc_no_personal_tone;
+    }
+    
+// -----------------------------------------------------------------------------
+//
+// r_profile_hac_mode_setting_page
+// Setting page resource for Hearing aid compatibility setting item.
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE AVKON_SETTING_PAGE r_profile_hac_mode_setting_page
+    {
+    label = qtn_set_audio_hac_mode;
+    softkey_resource = R_AVKON_SOFTKEYS_OK_CANCEL__OK;
+    type = EAknCtPopupSettingList;
+    editor_resource_id = r_profile_empty_popup_setting_list_control;
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_vibrating_alert_setting_texts
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE AVKON_POPUP_SETTING_TEXTS r_profile_hac_mode_setting_texts
+    {
+    setting_texts_resource = r_profile_hac_mode_texts_and_values;
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_vibrating_alert_texts_and_values
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE ARRAY r_profile_hac_mode_texts_and_values
+    {
+    items =
+        {
+        AVKON_ENUMERATED_TEXT { value = 1;  text = qtn_set_audio_hac_mode_on; },
+        AVKON_ENUMERATED_TEXT { value = 0;  text = qtn_set_audio_hac_mode_off; }
+        };
+    }
+
+// End of File
+

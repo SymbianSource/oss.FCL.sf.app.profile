@@ -1,0 +1,71 @@
+/*
+* Copyright (c) 2002 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Project definition file for Profiles application
+*
+*/
+
+
+// To get the APP_LAYER_SYSTEMINCLUDE-definition
+#include <platform_paths.hrh>
+#include <data_caging_paths.hrh>
+
+TARGET        profileapp.exe
+EPOCSTACKSIZE   0x5000
+EPOCHEAPSIZE    0x20000 0x400000 // Min 128kb, max 4Mb
+TARGETTYPE    exe
+
+UID             0x100039CE 0x100058F8
+CAPABILITY      CAP_APPLICATION
+VENDORID 	VID_DEFAULT
+
+SOURCEPATH      ../UIsrc
+
+SOURCE          CProfileApplication_SEC_APPARC.cpp
+SOURCE          CProfileAppUi.cpp
+SOURCE          CProfileDocument.cpp
+SOURCE          CProfileMainView.cpp
+SOURCE          CProfileMainContainer.cpp
+SOURCE          CProfileSettingsView.cpp
+
+SYSTEMINCLUDE   ../SettingsViewInc ../SettingsViewSrc
+
+START RESOURCE ProfileApp.rss
+HEADER
+TARGETPATH      APP_RESOURCE_DIR
+LANGUAGE_IDS
+END // RESOURCE
+
+SOURCEPATH      .
+START RESOURCE  ProfileApp_reg.rss
+DEPENDS profileapp.rsg
+ // Do not change the UID
+ TARGETPATH      /private/10003a3f/apps
+END // RESOURCE
+
+USERINCLUDE     . ../UIsrc
+SYSTEMINCLUDE	../../../inc
+
+APP_LAYER_SYSTEMINCLUDE
+
+LIBRARY         euser.lib bafl.lib
+LIBRARY         apparc.lib cone.lib eikcore.lib eikcoctl.lib avkon.lib eikctl.lib
+LIBRARY         featmgr.lib // Feature Manager
+LIBRARY         profileeng.lib // Profile Engine
+LIBRARY         hlplch.lib // Help
+LIBRARY         profilesettingsview.lib // Profiles application settings view
+LIBRARY         commonengine.lib // StringLoader
+
+
+
+// End of File

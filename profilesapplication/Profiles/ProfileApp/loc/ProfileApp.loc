@@ -1,0 +1,457 @@
+/*
+* Copyright (c) 2002 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Profiles application localisation strings.
+*
+*/
+
+
+
+// LOCALISATION STRINGS
+
+//d: Application title (app grid view)
+//l: cell_app_pane_t1
+#define qtn_apps_mode_grid          "Profiles"
+
+//d: Application title (app list view)
+//l: list_single_large_graphic_pane_t1
+#define qtn_apps_mode_list          "Profiles"
+
+//d: Profile Title Pane text (in Profile Main dialog)
+//l: title_pane_t2/opt9
+#define qtn_mode_profiles           "Profiles"
+
+//d: Profile settings list item for ringing tone selection
+//l: list_setting_pane_t1
+#define qtn_mode_ringing_tone       "Ringing tone"
+
+//d: Profile settings list item for line 1 ringing tone selection
+//l: list_setting_pane_t1
+#define qtn_mode_line1_tone         "Line 1 ringing tone"
+
+//d: Profile settings list item for line 2 ringing tone selection
+//l: list_setting_pane_t1
+#define qtn_mode_line2_tone         "Line 2 ringing tone"
+
+//d: Profile settings list item for Video telephone tone selection
+//d: Added to 2.common wk 30.
+//l: list_setting_pane_t1
+#define qtn_mode_vt_tone "Video Call tone"
+
+// d:Error note shown when ringing tone can't be set
+// d:because tone maximum file size is exceeded.
+// l:popup_note_window
+// r:3.1
+#define qtn_profiles_tone_maxsize_error "Files larger than %N KB cannot be set as ringing tone"
+
+//d: Profile settings list item for ringing type
+//l: list_setting_pane_t1
+#define qtn_mode_ringing_type_2     "Ringing type"
+
+//d: Profile settings list item for ringing volume
+//l: list_setting_pane_t1
+#define qtn_mode_ringing_volume     "Ringing volume"
+
+//d: Profile settings list item for Media volume
+//l: list_setting_pane_t1
+#define qtn_profiles_media_volume "Media volume"
+
+//d: Profile settings list item for message alert tone
+//l: list_setting_pane_t1
+#define qtn_mode_message_tone       "Message alert tone"
+
+//d: Profile settings list item for vibrating alert
+//l: list_setting_pane_t1
+#define qtn_mode_vibrating_alert    "Vibrating alert"
+
+//d: Profile settings list item for keypad tones
+//l: list_setting_pane_t1
+#define qtn_mode_keypad_volume      "Keypad tones"
+
+//d: Profile settings list item for warning and game tones
+//l: list_setting_pane_t1
+#define qtn_mode_warning_game       "Warning and game tones"
+
+//d: Profile settings list item alert for setting
+//l: list_setting_pane_t1
+#define qtn_mode_alert_for          "Alert for"
+
+//d: Profile settings list item for profile name
+//l: list_setting_pane_t1
+#define qtn_mode_sett_profile_name  "Profile name"
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+#define qtn_tc_ringing              "Ringing"
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+#define qtn_tc_ascending            "Ascending"
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+#define qtn_tc_ring_once            "Ring once"
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+#define qtn_tc_beep_once            "Beep once"
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+#define qtn_tc_silent               "Silent"
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+//r:2.8
+#define qtn_mode_warning_game_on	"On"
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+//r:2.8
+#define qtn_mode_warning_game_off	"Off"
+
+// LOC STRINGS FOR KEYPAD VOLUME
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+//r:3.0
+#define qtn_tc_keypad_off			"Off"
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+#define qtn_tc_keypad_quiet         "Level 1"
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+#define qtn_tc_keypad_medium        "Level 2"
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+#define qtn_tc_keypad_loud          "Level 3"
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+#define qtn_tc_all_callers          "All callers"
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+#define qtn_tc_several_groups       "Several groups"
+
+//d: Message alert tone "None"
+//l: list_single_graphic_pane_t1_cp2
+#define qtn_tc_none                 "None"
+
+//d: Profile Name Existing Notification Message
+//l: popup_note_window
+#define qtn_mode_rename_error       "A profile with that name already exists"
+
+//d: Max Volume Level Notification Message
+//l: popup_note_window
+#define qtn_tc_ringing_level_warning "Select maximum volume for ringing tone?"
+
+//d: Options Menu
+//l: list_single_pane_t1_cp2
+#define qtn_mode_change             "Change"
+
+//d: Options Menu
+//l: list_single_pane_t1_cp2
+#define qtn_mode_activate           "Activate"
+
+//d: Options Menu
+//l: list_single_pane_t1_cp2
+#define qtn_mode_personalise        "Personalise"
+
+//d: File list dialog header
+//l: heading_pane_t1
+#define qtn_tc_popup_heading        "Select tone: "
+
+// LOC STRINGS FOR DYNAMIC PROFILES
+
+//d: Options menu item for creating a new profile
+//l: list_single_pane_t1_cp2
+#define qtn_profiles_options_create_new "Create new profile"
+
+//d: Options menu item for deleting a user created profile
+//l: list_single_pane_t1_cp2
+#define qtn_profiles_options_delete "Delete a profile"
+
+//d: Error note when user tries to delete currently active (selected) profile.
+//l: popup_note_window
+#define qtn_profiles_delete_error "Profile in use, cannot delete"
+
+//d: Error note when user has created maximum number of user created profiles
+//d: and tries to create one more.
+//l: popup_note_window
+#define qtn_profiles_error_maximum "Maximum number of profiles exceeded"
+
+//d: Confirmation query for deleting a user created profile
+//l: popup_note_window
+#define qtn_profiles_conf_delete "Delete profile?"
+
+// LOC STRINGS FOR TIMED PROFILE
+
+//d: Options menu item for timed profile feature
+//l: list_single_pane_t1_cp2
+#define qtn_profiles_options_timed "Timed"
+
+//d: A query window where user enters the time when the profile expires
+//l: popup_query_data_window
+#define qtn_profiles_setting_expiry_time "Profile expires"
+
+//d: Information note which shows how much time is left until profile expires
+//d: 1 hour, 1 minute
+//l: popup_note_window
+#define qtn_profiles_conf_singular "Time left until profile expires:\n%0N hour and %1N minute"
+
+//d: Information note which shows how much time is left until profile expires
+//d: N hours, N minutes
+//l: popup_note_window
+#define qtn_profiles_conf_plural "Time left until profile expires:\n%0N hours and %1N minutes"
+
+//d: Information note which shows how much time is left until profile expires
+//d: 1 hour, N minutes
+//l: popup_note_window
+#define qtn_profiles_conf_hour_sev_min "Time left until profile expires:\n%0N hour and %1N minutes"
+
+//d: Information note which shows how much time is left until profile expires
+//d: N hours, 1 minute
+//l: popup_note_window
+#define qtn_profiles_conf_sev_hours_min "Time left until profile expires:\n%0N hours and %1N minute"
+
+//d: Error note shown if active profile is being timed
+//l: popup_note_window
+//w:
+//r:3.2
+#define qtn_profiles_error_timing_active_profile "Timing currently active profile is not allowed."
+
+
+// LOC STRING FOR E-MAIL ALERT TONE
+
+//d: Profile settings list item for e-mail alert tone
+//l: list_setting_pane_t1
+#define qtn_profiles_e_mail_tone "E-Mail alert tone"
+
+// LOC STRINGS FOR TTS RINGINGTONE
+
+//d: Profile Settings list item for Text-to-Speech ringingtone
+//l: list_setting_pane_t1
+//w:
+//r:3.0
+#define qtn_mode_tts_ringing_tone "Say caller’s name"
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+//w:
+//r:3.0
+#define qtn_mode_tts_ringing_tone_on "On"
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+//w:
+//r:3.0
+#define qtn_mode_tts_ringing_tone_off "Off"
+
+// LOC STRINGS FOR VIBRA SETTING
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+//r:3.0
+#define qtn_mode_vibrating_alert_on	"On"
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+//r:3.0
+#define qtn_mode_vibrating_alert_off	"Off"
+
+// LOC STRINGS FOR POC SETTING
+
+//d: Profile settings list item for PTT ringing tone selection
+//l: list_setting_pane_t1
+//w:
+//r:3.1
+#define qtn_poc_profile_ringing_tone       "PTT ringing tone"
+
+//d: Profile settings list item for PTT status
+//l: list_setting_pane_t1
+//w:
+//r:3.1
+#define qtn_poc_profile_status "PTT status"
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+//w:
+//r:3.1
+#define qtn_poc_profile_status_active            "Active"
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+//w:
+//r:3.1
+#define qtn_poc_profile_status_silent            "Silent"
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+//w:
+//r:3.1
+#define qtn_poc_profile_status_dnd            "Do not Disturb"
+
+// LOC STRINGS FOR AUDIO FILE EXISTENCE CHECK
+
+//d: Tone file not found Confirmation Note text
+//d: %U name of the file
+//l: popup_note_window
+//r:3.1
+#define qtn_profiles_confirm_ringtone_found  "%U file cannot be found. Default tone is used instead."
+
+// LOC STRINGS FOR 3D RINGINGTONE
+
+//d: Profile settings list item for 3d effect
+//l: list_setting_pane_t1
+//r:5.0
+#define qtn_profiles_tone_3d_effect  "Ringing 3-D effect"
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+//r:5.0
+#define qtn_profiles_3d_effect_off "Off"
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+//r:5.0
+#define qtn_profiles_3d_effect_circle "Circle"
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+//r:5.0
+#define qtn_profiles_3d_effect_flyby "Flyby"
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+//r:5.0
+#define qtn_profiles_3d_effect_zig_zag "Zig-Zag"
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+//r:5.0
+#define qtn_profiles_3d_effect_random_walk "Random walk"
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+//r:5.0
+#define qtn_profiles_3d_effect_chaos "Chaos"
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+//r:5.0
+#define qtn_profiles_3d_effect_stereo_widening "Stereo widening"
+
+//d: Profile settings list item for 3d echo
+//l: list_setting_pane_t1
+//r:5.0
+#define qtn_profiles_tone_3d_echo "Ringing 3-D echo"
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+//r:5.0
+#define qtn_profiles_3d_echo_off "Off"
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+//r:5.0
+#define qtn_profiles_3d_echo_living_room "Living room"
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+//r:5.0
+#define qtn_profiles_3d_echo_cave "Cave"
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+//r:5.0
+#define qtn_profiles_3d_echo_stone_corridor "Stone Corridor"
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+//r:5.0
+#define qtn_profiles_3d_echo_forest "Forest"
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+//r:5.0
+#define qtn_profiles_3d_echo_sewer_pipe "Sewer pipe"
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+//r:5.0
+#define qtn_profiles_3d_echo_underwater "Underwater"
+
+// LOC STRINGS FOR AUDIO AND TACTILE FEEDBACK
+
+//d: Profile settings list item for tactile feedback
+//l: list_setting_pane_t1
+//r:5.0
+#define qtn_mode_tactile_feedback  "Tactile feedback"
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+//r:5.0
+#define qtn_mode_tactile_feedback_off "Off"
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+//r:5.0
+#define qtn_mode_tactile_feedback_level1 "Level 1"
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+//r:5.0
+#define qtn_mode_tactile_feedback_level2 "Level 2"
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+//r:5.0
+#define qtn_mode_tactile_feedback_level3 "Level 3"
+
+//d: Profile settings list item for tactile feedback
+//l: list_setting_pane_t1
+//r:5.0
+#define qtn_mode_audio_feedback  "Audio feedback"
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+//r:5.0
+#define qtn_mode_audio_feedback_off "Off"
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+//r:5.0
+#define qtn_mode_audio_feedback_level1 "Level 1"
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+//r:5.0
+#define qtn_mode_audio_feedback_level2 "Level 2"
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+//r:5.0
+#define qtn_mode_audio_feedback_level3 "Level 3"
+
+// Power save mode
+
+// d:Error note shown when editing is blocked because of power save mode
+// l:popup_note_window
+// r:5.0
+#define qtn_power_saving_protected_settings_infonote "Power saving is active. Unable to edit."
+
+// End of File

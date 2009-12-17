@@ -1,0 +1,59 @@
+/*
+* Copyright (c) 2002 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  ProfileAiwProvider localisation strings.
+*
+*/
+
+
+
+// LOCALISATION STRINGS
+
+//d:Command in options list
+//d:Uses tone as ringing tone
+//l:list_single_popup_submenu_pane_t1
+//w:
+//r:3.1
+#define qtn_mg_options_set_as_rt                    "Set as ringing tone"
+
+//d: Error message text for non-supported file formats
+//l: popup_note_window
+//w:
+//r:3.1
+#define qtn_profiles_info_tone_drm_protected	    "Protected file. Cannot be selected as ringing tone."
+
+//d: ListBox dialog header
+//l: heading_pane_t1
+//w:
+//r:3.1
+#define qtn_profiles_query_select_profiles           "Select profiles:"
+
+//d: Error message text for non-supported file formats
+//l: popup_note_window 
+//w:
+//r:3.1
+#define qtn_profiles_info_mime_type_not_supported			"Files of this format cannot be set as ringing tone."
+
+//d: Information note for changed profiles
+//l: popup_note_window 
+//w:
+//r:3.1
+#define qtn_profiles_confirm_ringtone_changed		"Ringing tone changed for selected profiles."
+
+//d: Information note shown when a file is copied from a remote drive
+//l: popup_note_window 
+//w:
+//r:5.0
+#define qtn_profiles_info_remote_drive_copy		"File copied to Gallery and set as ringing tone for selected profiles."
+
+// End of File

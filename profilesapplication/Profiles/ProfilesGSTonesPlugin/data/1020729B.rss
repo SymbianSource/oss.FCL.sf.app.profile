@@ -1,0 +1,44 @@
+/*
+* Copyright (c) 2005 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:    ECOM resource file for plugin.
+*
+*/
+
+#include <RegistryInfo.rh>
+#include "ProfilesUID.h"
+
+
+RESOURCE REGISTRY_INFO theInfo
+	{
+	dll_uid     = IMPLEMENTATION_UID_PROFILES_GS_TONES_PLUGIN;
+	interfaces  = 
+		{
+		INTERFACE_INFO
+			{
+			interface_uid   = 0x10207236;
+			implementations = 
+				{
+				IMPLEMENTATION_INFO
+					{
+					implementation_uid  = IMPLEMENTATION_UID_PROFILES_GS_TONES_PLUGIN;
+					version_no          = 1;
+					display_name        = "Tones View Plugin"; // Debug name
+					default_data        = "0x10207252";// Parent UID (Personalisation)
+					opaque_data         = "2";// Order number
+					}
+				};
+			}
+		};
+	}
+
