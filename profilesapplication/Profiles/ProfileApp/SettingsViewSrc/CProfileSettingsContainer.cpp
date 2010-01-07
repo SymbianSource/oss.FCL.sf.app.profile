@@ -909,7 +909,7 @@ CAknSettingItem* CProfileSettingsContainer::CreateSettingItemL(
                 *iCopyProfile->iRingingTone,
                 iCopyProfile->iRingingType,
                 iCopyProfile->iVibratingAlert,
-                ETrue ); //Display confirmation note for maximum volume
+                EFalse ); //Display confirmation note for maximum volume
             break;
             }
 		 case EProfileSettingMediaVolumeId:
@@ -924,11 +924,7 @@ CAknSettingItem* CProfileSettingsContainer::CreateSettingItemL(
             }
         case EProfileSettingVibratingAlertId:
             {
-            /*
             settingItem = new( ELeave ) CAknBinaryPopupSettingItem(
-                aIdentifier, iCopyProfile->iVibratingAlert );
-            */
-            settingItem = new( ELeave ) CProfileFeedbackSettingItem(
                 aIdentifier, iCopyProfile->iVibratingAlert );
             break;
             }
