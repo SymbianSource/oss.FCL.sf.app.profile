@@ -21,13 +21,13 @@
 #include "CProfilePlayingVolumeSettingPage.h"
 
 #include <AknQueryDialog.h>
-#include <cfldcontroller.h>
+#include <CFLDController.h>
 #include <ProfileSettingsView.rsg>
 #include "CProfileStruct.h" // KProfileMaxProfileNameLength
 #include <apgcli.h>	// For RApaLsSession
 #include <bautils.h> // For BaflUtils
 #include <centralrepository.h>
-#include <profileengineinternalcrkeys.h>
+#include <ProfileEngineInternalCRKeys.h>
 
 // CONSTANTS
 namespace

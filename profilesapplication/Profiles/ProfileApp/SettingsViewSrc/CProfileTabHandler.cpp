@@ -23,7 +23,7 @@
 // INTERNAL INCLUDES
 #include "CProfileEngineHandler.h"
 #include "CProfileIndexHandler.h"
-#include "profileengineconstants.h"
+#include "ProfileEngineConstants.h"
 
 // EXTERNAL INCLUDES
 #include <aknnavi.h>
@@ -31,9 +31,9 @@
 #include <akntabgrp.h>
 #include <aknnavide.h>
 #include <AknUtils.h> // AknTextUtils
-#include <mprofilesnamesarray.h>
+#include <MProfilesNamesArray.h>
 
-#include <mprofilename.h>
+#include <MProfileName.h>
 
 // ============================ MEMBER FUNCTIONS ===============================
 

@@ -23,17 +23,17 @@
 // INTERNAL INCLUDES
 #include <coemain.h>
 
-#include <profile.hrh> // From Profile Engine
+#include <Profile.hrh> // From Profile Engine
 #include <StringLoader.h>
 #include <centralrepository.h>
-#include <profileengineinternalcrkeys.h>
+#include <ProfileEngineInternalCRKeys.h>
 #include <ProfileSettingsView.rsg>
 #include <data_caging_path_literals.hrh>
 #include <CLFContentListing.hrh>	// For TCLFMediaType::ECLFMediaTypeVideo
 
 // for mediafilelist
 #include <mediafilelist.h>
-#include <profileinternal.hrh>
+#include <ProfileInternal.hrh>
 #include <DRMHelper.h>
 
 

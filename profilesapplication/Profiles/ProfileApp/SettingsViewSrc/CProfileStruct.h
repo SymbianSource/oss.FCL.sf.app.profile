@@ -21,8 +21,8 @@
 #define CPROFILESTRUCT_H
 
 // INCLUDES
-#include "profileeng.hrh"
-#include "profileinternal.hrh"
+#include "ProfileEng.hrh"
+#include "ProfileInternal.hrh"
 #include <cntdef.h>
 
 // CONSTANTS

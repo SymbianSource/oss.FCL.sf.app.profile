@@ -26,16 +26,16 @@
 #include <featmgr.h>
 #include <CProfileEngineHandler.h>
 #include <CProfileIndexHandler.h>
-#include <mprofileengineextended.h>
-#include <mprofilesnamesarray.h>
+#include <MProfileEngineExtended.h>
+#include <MProfilesNamesArray.h>
 #include <csxhelp/mode.hlp.hrh>
-#include <profileeng.hrh>
+#include <ProfileEng.hrh>
 
 #include "CProfileMainView.h"
 #include "CProfileDocument.h"
 #include "CProfileApplication.h"
 #include "ProfileApp.hrh"
-#include "profileengineconstants.h"
+#include "ProfileEngineConstants.h"
 
 // CONSTANTS
 _LIT( KTabChar, "\t" );

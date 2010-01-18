@@ -22,7 +22,7 @@
 
 // INCLUDES
 #include <aknview.h>
-#include "mprofilechangeobserver.h"
+#include "MProfileChangeObserver.h"
 #include "MProfileViewHandler.h"
 
 // CONSTANTS

@@ -23,8 +23,8 @@
 #include    <akntitle.h>
 #include    <akntabgrp.h>
 #include    <featmgr.h>
-#include    <mprofileengineextended.h>
-#include    <mprofilesnamesarray.h>
+#include    <MProfileEngineExtended.h>
+#include    <MProfilesNamesArray.h>
 #include    <CProfileEngineHandler.h>
 #include    <CProfileIndexHandler.h>
 #include    <CProfileTabHandler.h>

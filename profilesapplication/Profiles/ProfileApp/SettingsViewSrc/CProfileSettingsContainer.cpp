@@ -200,8 +200,11 @@ void CProfileSettingsContainer::ConstructL( const TRect& aRect,
                 *( iAvkonAppUi->StatusPane() ), iEngineHandler );
 
         MProfilesNamesArray* nameArray = iEngineHandler.IdArray();
-        iNaviPaneContainer->SetNaviPaneTextL( 
-            nameArray->MdcaPoint( iIndexHandler->CurrentProfileIndex() ) );
+        if( iIndexHandler )
+            {
+            iNaviPaneContainer->SetNaviPaneTextL( 
+                nameArray->MdcaPoint( iIndexHandler->CurrentProfileIndex() ) );
+            }
         }
 
     iNotifier = CProfileChangeNotifyHandler::NewL( this );

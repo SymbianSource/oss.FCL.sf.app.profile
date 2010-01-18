@@ -23,7 +23,7 @@
 #include    <GSProfilesPluginRsc.rsg> // GUI Resource
 #include    <gsprofilesplugin.mbg>
 #include    <gsprivatepluginproviderids.h>
-#include    <profileenginesdkcrkeys.h>
+#include    <ProfileEngineSDKCRKeys.h>
 #include    <hwrmvibrasdkcrkeys.h>
 
 // System includes
@@ -33,25 +33,25 @@
 #include    <StringLoader.h>
 #include    <centralrepository.h>
 
-#include    <proengfactory.h>
-#include    <mprofileengine.h>
-#include    <mprofile.h>
-#include    <mprofiletones.h>
-#include    <mproengtonesettings.h>
-#include    <mprofileextrasettings.h>
-#include    <mprofilefeedbacksettings.h>
-#include    <tprofiletonesettings.h>
+#include    <ProEngFactory.h>
+#include    <MProfileEngine.h>
+#include    <MProfile.h>
+#include    <MProfileTones.h>
+#include    <MProEngToneSettings.h>
+#include    <MProfileExtraSettings.h>
+#include    <MProfileFeedbackSettings.h>
+#include    <TProfileToneSettings.h>
 
-#include    <profileeng.hrh>
-#include    <profileengineinternalcrkeys.h>
+#include    <ProfileEng.hrh>
+#include    <ProfileEngineInternalCRKeys.h>
 
 // PSM client
 #include <psmclient.h>
 #include <psmsettings.h>
 #include <e32property.h>
-#include <mprofileengineextended.h>
-#include <mprofileextended.h>
-#include <profileengineprivatepskeys.h>
+#include <MProfileEngineExtended.h>
+#include <MProfileExtended.h>
+#include <ProfileEnginePrivatePSKeys.h>
 
 
 // ========================= MEMBER FUNCTIONS ================================

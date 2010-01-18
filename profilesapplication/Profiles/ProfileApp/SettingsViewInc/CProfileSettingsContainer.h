@@ -24,7 +24,7 @@
 #include    <MSSSettingsObserver.h>
 #include    <ConeResLoader.h>           // RConeResourceLoader
 #include    <AknTabObserver.h>          // MAknTabObserver
-#include    <mprofilechangeobserver.h>
+#include    <MProfileChangeObserver.h>
 #include    "MProfileExternalSettingsObserver.h"
 #include    "MProfileExternalSettingsHandler.h"
 #include    <centralrepository.h>

@@ -20,7 +20,7 @@
 //  INCLUDES
 #include "CProfileIndexHandler.h"
 
-#include <mprofilesnamesarray.h>
+#include <MProfilesNamesArray.h>
 #include <eiklbx.h>
 
 #include "CProfileEngineHandler.h"

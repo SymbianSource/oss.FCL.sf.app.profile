@@ -20,9 +20,9 @@
 // INCLUDE FILES
 #include "CProfileEngineHandler.h"
 
-#include <mprofileengineextended.h>
-#include <mprofilesnamesarray.h>
-#include <mprofilename.h>
+#include <MProfileEngineExtended.h>
+#include <MProfilesNamesArray.h>
+#include <MProfileName.h>
 
 // ============================ MEMBER FUNCTIONS ===============================
 

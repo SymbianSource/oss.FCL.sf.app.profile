@@ -25,9 +25,9 @@
 #include    <eikspane.h>
 #include    <avkon.hrh> // EEikStatusPaneUidNavi
 #include    <AknUtils.h> // AknTextUtils
-#include    <mprofilesnamesarray.h>
-#include    <mprofileengineextended.h>
-#include    <mprofilename.h>
+#include    <MProfilesNamesArray.h>
+#include    <MProfileEngineExtended.h>
+#include    <MProfileName.h>
 
 #include    "CProfileEngineHandler.h"
 

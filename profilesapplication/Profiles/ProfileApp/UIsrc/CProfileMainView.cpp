@@ -191,14 +191,6 @@ void CProfileMainView::DoCmdActivateL()
 			CleanupStack::PopAndDestroy( infoText );
 			return;
 			}
-		else if( !DisplayConfirmationQueryL(
-            R_PROFILE_LEAVE_OFFLINE_CONFIRMATION_QUERY ) )
-			{
-			// SIM card exists.
-			// User replied that he/she doesn't want to activate RF.
-			// Exit from method, do not activate the focused profile.
-			return;
-			}
 		}
 	iEngineHandler.Engine()->SetActiveProfileL( currentProfileId );
 	}
@@ -451,14 +443,6 @@ void CProfileMainView::DoCmdTimedL()
                 new( ELeave ) CAknInformationNote( ETrue );
 			note->ExecuteLD( *infoText );
 			CleanupStack::PopAndDestroy( infoText );
-			return;
-			}
-		else if( !DisplayConfirmationQueryL(
-            R_PROFILE_LEAVE_OFFLINE_CONFIRMATION_QUERY ) )
-			{
-			// SIM card exists.
-			// User replied that he/she doesn't want to activate RF.
-			// Exit from method, do not activate the focused profile.
 			return;
 			}
 		}

@@ -21,13 +21,13 @@
 #include "CProfile3dSettingPage.h"
 #include "ProfileSettingsView.hrh"
 
-#include <cfldcontroller.h>
+#include <CFLDController.h>
 #include <ProfileSettingsView.rsg>
 #include <apgcli.h>	// For RApaLsSession
 #include <bautils.h> // For BaflUtils
 #include <centralrepository.h>
-#include <profileengineinternalcrkeys.h>
-#include <profileinternal.hrh>
+#include <ProfileEngineInternalCRKeys.h>
+#include <ProfileInternal.hrh>
 
 // CONSTANTS
 namespace
