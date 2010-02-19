@@ -99,6 +99,7 @@ void CPapPopupList::HandleListBoxEventL( CEikListBox* aListBox, TListBoxEvent aE
     switch( aEventType )
         {
         case EEventItemClicked:
+        case EEventItemSingleClicked:
             UpdateCba();
             break;
 
