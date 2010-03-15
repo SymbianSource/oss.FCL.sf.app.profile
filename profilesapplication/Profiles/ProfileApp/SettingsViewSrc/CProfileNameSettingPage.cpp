@@ -21,7 +21,7 @@
 #include    "CProfileNameSettingPage.h"
 
 #include    <aknnotewrappers.h>
-#include    <mprofilesnamesarray.h>
+#include    <MProfilesNamesArray.h>
 #include    <ProfileSettingsView.rsg>
 #include	<StringLoader.h>
 

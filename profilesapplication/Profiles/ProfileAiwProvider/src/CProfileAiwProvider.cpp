@@ -36,12 +36,12 @@
 #include <aknnotewrappers.h> // For CAknInformationNote
 #include <aknlists.h>	// For CAknSingleGraphicPopupMenuStyleListBox
 #include <cprofiletonehandler.h>
-#include <mprofilesnamesarray.h>
-#include <mprofilename.h>
-#include <mprofileengineextended.h>
-#include <mprofileextended.h>
-#include <profileenginedomaincrkeys.h>
-#include <profileeng.hrh>	// For PROFILES_MAX_NAME_LENGTH
+#include <MProfilesNamesArray.h>
+#include <MProfileName.h>
+#include <MProfileEngineExtended.h>
+#include <MProfileExtended.h>
+#include <ProfileEngineDomainCRKeys.h>
+#include <ProfileEng.hrh>	// For PROFILES_MAX_NAME_LENGTH
 #include <eikfutil.h>	// For EikFileUtils
 #include <centralrepository.h>
 #include <featmgr.h>

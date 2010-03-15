@@ -29,23 +29,23 @@
 
 // EXTERNAL INCLUDES
 #include 	<centralrepository.h>
-#include    <profileenginedomaincrkeys.h> // KProEngRingingToneMaxSize
+#include    <ProfileEngineDomainCRKeys.h> // KProEngRingingToneMaxSize
 #include    <bautils.h> // BaflUtils
 #include    <apgcli.h> // RApaLsSession
 #include    <coemain.h> // CCoeEnv
 #include    <aknnotewrappers.h> // CAknInformationNote
 #include    <ConeResLoader.h> // RConeResourceLoader
 #include	<StringLoader.h>
-#include    <mprofileengineextended.h>
-#include    <mprofileslocalfeatures.h>
-#include    <mprofileextended.h>
-#include    <mprofilesetextratones.h>
+#include    <MProfileEngineExtended.h>
+#include    <MProfilesLocalFeatures.h>
+#include    <MProfileExtended.h>
+#include    <MProfileSetExtraTones.h>
 #include    <MProfileSetTones.h>
-#include    <mprofileextratones.h>
-#include    <mprofiletones.h>
-#include    <mprofilesnamesarray.h>
-#include    <mprofilename.h>
-#include    <mprofileutilitysingleton.h>
+#include    <MProfileExtraTones.h>
+#include    <MProfileTones.h>
+#include    <MProfilesNamesArray.h>
+#include    <MProfileName.h>
+#include    <MProfileUtilitySingleton.h>
 #include    <ProfileSettingsView.rsg>
 #include    <AknGlobalNote.h>
 #include    <f32file.h>

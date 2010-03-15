@@ -19,27 +19,27 @@
 
 // CLASS HEADER
 #include "CProfileStruct.h"
-#include "profileinternal.hrh"
+#include "ProfileInternal.hrh"
 
 // EXTERNAL INCLUDES
-#include <mprofileextended.h>
-#include <mprofilename.h>
-#include <mprofilesetname.h>
-#include <mprofiletones.h>
+#include <MProfileExtended.h>
+#include <MProfileName.h>
+#include <MProfileSetName.h>
+#include <MProfileTones.h>
 #include <MProfileSetTones.h>
-#include <mprofileextratones.h>
-#include <mprofilesetextratones.h>
-#include <mprofileextrasettings.h>
-#include <mprofilesetextrasettings.h>
-#include <mprofilepttsettings.h>
-#include <mprofilesetpttsettings.h>
+#include <MProfileExtraTones.h>
+#include <MProfileSetExtraTones.h>
+#include <MProfileExtraSettings.h>
+#include <MProfileSetExtraSettings.h>
+#include <MProfilePttSettings.h>
+#include <MProfileSetPttSettings.h>
 #include <AknUtils.h> // AknTextUtils
-#include <mprofilefeedbacksettings.h>
-#include <mprofilesetfeedbacksettings.h>
-#include <mprofile3dtonesettings.h>
-#include <mprofileset3dtonesettings.h>
+#include <MProfileFeedbackSettings.h>
+#include <MProfileSetFeedbackSettings.h>
+#include <MProfile3DToneSettings.h>
+#include <MProfileSet3DToneSettings.h>
 
-#include <tprofiletonesettings.h>
+#include <TProfileToneSettings.h>
 
 // ============================ MEMBER FUNCTIONS ===============================
 

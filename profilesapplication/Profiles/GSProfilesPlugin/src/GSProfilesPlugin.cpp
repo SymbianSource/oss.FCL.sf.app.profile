@@ -28,7 +28,7 @@
 
 // System includes
 #include    <apadoc.h>
-#include    <aknnullservice.h>
+#include    <AknNullService.h>
 #include    <bautils.h>
 #include    <StringLoader.h>
 #include    <centralrepository.h>

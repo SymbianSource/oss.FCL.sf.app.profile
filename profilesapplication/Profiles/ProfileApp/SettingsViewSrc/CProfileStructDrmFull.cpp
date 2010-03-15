@@ -21,9 +21,9 @@
 #include "CProfileStruct.h"
 
 // EXTERNAL INCLUDES
-#include <mprofileextended.h>
-#include <mprofiletones.h>
-#include <mprofileextratones.h>
+#include <MProfileExtended.h>
+#include <MProfileTones.h>
+#include <MProfileExtraTones.h>
 #include <DRMHelper.h>
 #include <coemain.h>
 

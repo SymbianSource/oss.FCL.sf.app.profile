@@ -34,8 +34,8 @@
 #include    "CProfileFileListSettingItem.h"
 #include    "CProfileAlertForSettingItem.h"
 #include    "CProfileStruct.h"
-#include    "mprofileslocalfeatures.h"
-#include    "profilesvariant.hrh"  // KProEngFeatureIdVTRingingTone
+#include    "MProfilesLocalFeatures.h"
+#include    "ProfilesVariant.hrh"  // KProEngFeatureIdVTRingingTone
 #include	"CProfileSettingsView.h"
 #include	"MProfileViewHandler.h" 
 #include    "ProfilesDebug.h"
@@ -49,24 +49,24 @@
 #include    <eikapp.h>
 #include    <csxhelp/mode.hlp.hrh>
 #include    <featmgr.h>
-#include    <mprofileextended.h>
+#include    <MProfileExtended.h>
 
-#include    <mprofile3dtonesettings.h>
-#include    <mprofilefeedbacksettings.h>
-#include    <mprofileextrasettings.h>
+#include    <MProfile3DToneSettings.h>
+#include    <MProfileFeedbackSettings.h>
+#include    <MProfileExtraSettings.h>
 
-#include    <mprofileengineextended.h>
-#include    <mprofilesnamesarray.h>
-#include    <mprofilename.h>
-#include    <cprofilechangenotifyhandler.h>
+#include    <MProfileEngineExtended.h>
+#include    <MProfilesNamesArray.h>
+#include    <MProfileName.h>
+#include    <CProfileChangeNotifyHandler.h>
 #include    <ProfileSettingsView.rsg>
 #include 	<data_caging_path_literals.hrh>
 #include 	<centralrepository.h>
 #include    <settingsinternalcrkeys.h>
 #include	<bautils.h>	// For BaflUtils
 #include	<StringLoader.h>	// For StringLoader
-#include	<profileenginesdkcrkeys.h>	// For KCRUidProfileEngine
-#include	<profileengineinternalcrkeys.h>	// For KProEngDefaultRingingTone
+#include	<ProfileEngineSDKCRKeys.h>	// For KCRUidProfileEngine
+#include	<ProfileEngineInternalCRKeys.h>	// For KProEngDefaultRingingTone
 #include	<AknQueryDialog.h>	// For CAknQueryDialog
 #include    "CProfileNaviPaneContainer.h" // For CProfileNaviPaneContainer
 #include    <aknnotewrappers.h> // For CAknInformationNote
@@ -75,7 +75,7 @@
 #include    <psmsettings.h>
 #include    <psmsrvdomaincrkeys.h>
 #include    <e32property.h>
-#include    <profileengineprivatepskeys.h>
+#include    <ProfileEnginePrivatePSKeys.h>
 
 namespace
 	{

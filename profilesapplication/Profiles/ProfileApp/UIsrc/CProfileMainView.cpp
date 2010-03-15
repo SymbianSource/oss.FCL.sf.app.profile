@@ -33,16 +33,16 @@
 
 #include    <akntitle.h>
 #include	<StringLoader.h>
-#include    <cprofilechangenotifyhandler.h>
+#include    <CProfileChangeNotifyHandler.h>
 #include    <CProfileEngineHandler.h>
 #include    <CProfileIndexHandler.h>
-#include	<mprofileengine.h>
-#include    <mprofileengineextended.h>
-#include    <mprofile.h>
-#include    <mprofilename.h>
-#include    <mprofileextended.h>
-#include    <mprofilesnamesarray.h>
-#include    <profile.hrh>
+#include	<MProfileEngine.h>
+#include    <MProfileEngineExtended.h>
+#include    <MProfile.h>
+#include    <MProfileName.h>
+#include    <MProfileExtended.h>
+#include    <MProfilesNamesArray.h>
+#include    <Profile.hrh>
 #include    <ProfileApp.rsg>
 #include 	<AknQueryDialog.h>
 
@@ -50,8 +50,8 @@
 #include    "CProfileDocument.h"
 #include    "ProfileApp.hrh"
 #include    "CProfileNaviPaneContainer.h"
-#include    "mprofileslocalfeatures.h"
-#include 	"profilesvariant.hrh" // KProEngFeatureIdTimedProfiles
+#include    "MProfilesLocalFeatures.h"
+#include 	"ProfilesVariant.hrh" // KProEngFeatureIdTimedProfiles
 
 
 // CONSTANTS
