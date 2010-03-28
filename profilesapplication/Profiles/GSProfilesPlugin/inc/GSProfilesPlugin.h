@@ -241,7 +241,7 @@ class CPSMProfilesPlugin : public CPsmPluginBase
 	    void GetActiveProfileSettingsL( TPsmSettingItems& aItems );
 	    //void GetActiveProfileSettings2L( TPsmSettingItems& aItems );
 	    TUint32 ResolveKey( TUint aPartialKey, TInt aProfileId );
-	    void CPSMProfilesPlugin::Panic( TInt aReason );
+	    void Panic( TInt aReason );
     };
 
 
