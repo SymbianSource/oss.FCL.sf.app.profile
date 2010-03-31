@@ -463,15 +463,15 @@ TInt CProfileToneHandler::CheckFileL( const TDesC& aFileName )
 		}
 		
 	// Check whether file is supported by MMF
-    TBuf8<KMaxDataTypeLength> tempDataType;
-    tempDataType.Copy( dataType );
-
-    if( !ProfileMmfInfoUtility::IsMimeTypeSupportedL( tempDataType ) )
-    	{
-    	// File is not supported by MMF
-    	return KErrNotSupported;
-    	}
-
+	TBuf8<KMaxDataTypeLength> tempDataType;
+	tempDataType.Copy( dataType );
+    if (!ProfileMmfInfoUtility::IsMimeTypeSupportedL(tempDataType)
+			&& !ProfileMmfInfoUtility::IsHeaderDataSupportedL(aFileName))
+		{
+		// File is not supported by MMF
+		return KErrNotSupported;
+		}
+    
 	// Operator requirement. Check if the tones of this data type are blocked:
     if( iProfilesFeatures->IsBlockedType( dataType ) ||
         iProfilesFeatures->IsExcludedType( dataType ) )

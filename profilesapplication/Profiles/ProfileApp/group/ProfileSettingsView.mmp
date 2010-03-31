@@ -73,6 +73,7 @@ LIBRARY			apmime.lib // TDataType
 LIBRARY         cntmodel.lib // Contact database
 LIBRARY         pbkeng.lib // Phone Book contact engine
 LIBRARY         commonengine.lib // Shared data
+LIBRARY         featdiscovery.lib // CFeatureDiscovery
 LIBRARY         featmgr.lib // Feature Manager
 LIBRARY         sssettings.lib // Phone settings (Alternate Line Service)
 LIBRARY         mediaclientaudio.lib // MultiMedia Framework, audio client

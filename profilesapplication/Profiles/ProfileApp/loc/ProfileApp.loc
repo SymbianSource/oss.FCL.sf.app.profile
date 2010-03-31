@@ -48,11 +48,11 @@
 //l: list_setting_pane_t1
 #define qtn_mode_vt_tone "Video Call tone"
 
-// d:Error note shown when ringing tone can't be set
+// d:Error note shown when a tone can't be set
 // d:because tone maximum file size is exceeded.
 // l:popup_note_window
 // r:3.1
-#define qtn_profiles_tone_maxsize_error "Files larger than %N KB cannot be set as ringing tone"
+#define qtn_profiles_tone_maxsize_error "Unable to use tone. File size exceeds %N kB."
 
 //d: Profile settings list item for ringing type
 //l: list_setting_pane_t1

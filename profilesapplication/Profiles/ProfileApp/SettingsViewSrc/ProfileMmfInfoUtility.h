@@ -45,6 +45,15 @@ class ProfileMmfInfoUtility
          *         EFalse otherwise.
          */
         static TBool IsMimeTypeSupportedL( const TDesC8& aMimeType );
+        
+        /**
+         * Checks if the given file's header data is supported 
+         * by MMF, especially for m4a drm files.
+         * @param aFileName the name of the file to be judged.
+         * @return ETrue if the given file is supported by MMF,
+         *         EFalse otherwise.
+         */
+        static TBool IsHeaderDataSupportedL( const TDesC& aFileName );
 
     private:  // Constructor and destructor
 
@@ -56,6 +65,15 @@ class ProfileMmfInfoUtility
 
         // Destructor.
         ~ProfileMmfInfoUtility() {};
+        
+        //internal use
+        /**
+         * Get the header data of the file
+         * @param aFileName specifies the name of the file.
+         * @param aHeaderData contains the header data of the file.
+         * @param aMaxLength the length of header data.         
+         */
+        static void GetFileHeaderDataL(const TDesC& aFileName, TDes8& aHeaderData, TInt aMaxLength);
     };
 
 #endif      // PROFILEMMFINFOUTILITY_H

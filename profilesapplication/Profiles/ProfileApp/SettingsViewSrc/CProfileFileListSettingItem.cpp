@@ -30,6 +30,7 @@
 #include <ProfileSettingsView.rsg>
 #include <data_caging_path_literals.hrh>
 #include <CLFContentListing.hrh>	// For TCLFMediaType::ECLFMediaTypeVideo
+#include <featdiscovery.h> // CFeatureDiscovery
 
 // for mediafilelist
 #include <mediafilelist.h>
@@ -193,9 +194,13 @@ void CProfileFileListSettingItem::EditItemL( TBool /*aCalledFromMenu*/ )
         }
        
     // Size limit for voice call tone files
+    // Messaging tone size is also limited if the
+    // "FF_LIMITED_MESSAGE_AND_ALARM_TONE_SIZE" feature flag is enabled
     if ( id == EProfileSettingRingingToneId      ||
          id == EProfileSettingRingingToneLine1Id ||
-         id == EProfileSettingRingingToneLine2Id )
+         id == EProfileSettingRingingToneLine2Id ||
+         ( id == EProfileSettingMessageAlertToneId &&
+           CFeatureDiscovery::IsFeatureSupportedL( KFeatureIdFfLimitedMessageAndAlarmToneSize ) ) )
         {
         TInt sizeLimitKB = 0;
         CRepository* cenrep = CRepository::NewL( KCRUidProfileEngine );
@@ -204,7 +209,6 @@ void CProfileFileListSettingItem::EditItemL( TBool /*aCalledFromMenu*/ )
         CleanupStack::PopAndDestroy(); // cenrep
 
         list->SetAttrL( CMediaFileList::EAttrFileSize, sizeLimitKB );
-        
 
         }
 

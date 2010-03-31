@@ -51,6 +51,7 @@
 #include    <featmgr.h>
 #include    <MProfileExtended.h>
 
+#include    <MProfileTones.h>
 #include    <MProfile3DToneSettings.h>
 #include    <MProfileFeedbackSettings.h>
 #include    <MProfileExtraSettings.h>
@@ -76,6 +77,7 @@
 #include    <psmsrvdomaincrkeys.h>
 #include    <e32property.h>
 #include    <ProfileEnginePrivatePSKeys.h>
+#include    <TProfileToneSettings.h>
 
 namespace
 	{
@@ -536,7 +538,9 @@ void CProfileSettingsContainer::SetHiddenFlagsL()
     CAknSettingItemArray* array = SettingItemArray();
     TUint32 flags( iProfile->VisibleFlags() );
     TInt profileId( 0 );
-
+	const MProfileTones& tones = iProfile->ProfileTones();
+	const TProfileToneSettings& toneSettings = tones.ToneSettings();
+	
     TBool hide3DEcho = EFalse;
     TInt effect = iProfile->ProfileExtraSettings().Profile3DToneSettings().Effect();
     if ( effect == EProfile3DEffectOff || effect == EProfile3DEffectStereoWidening )
@@ -614,10 +618,17 @@ void CProfileSettingsContainer::SetHiddenFlagsL()
 		
 	SetItemHidden( EProfileSettingVibratingAlertId, array,
         ~flags & EProfileFlagVibratingAlert );
-        
-	SetItemHidden( EProfileSettingEmailVibratingAlertId, array,
-        ~flags & EProfileFlagVibratingAlert );
-    SetItemHidden( EProfileSettingKeypadVolumeId, array,
+
+	if(!iCopyProfile->iVibratingAlert)
+	   {
+	   SetItemHidden( EProfileSettingEmailVibratingAlertId, array,ETrue );	
+	   }
+	else
+	   {
+	   SetItemHidden( EProfileSettingEmailVibratingAlertId, array,EFalse );
+	   }         
+
+	SetItemHidden( EProfileSettingKeypadVolumeId, array,
         ~flags & EProfileFlagKeypadVolume );
         
     SetItemHidden( EProfileSettingWarningAndGameTonesId, array,
@@ -788,7 +799,13 @@ EXPORT_C void CProfileSettingsContainer::EditItemL( TInt aIndex, TBool aCalledFr
     	{
     	iIndexHandler->StoreIndices();
     	}
-
+    
+    TInt vibratingAlert = iCopyProfile->iVibratingAlert;
+    if( identifier == EProfileSettingVibratingAlertId && iIndexHandler )
+      	{
+      	iIndexHandler->StoreIndices();
+      	}
+    
     // Set boolean value to ETrue that we know that the settings container
     // is in editing mode.
     iItemEdited = ETrue;
@@ -834,6 +851,11 @@ EXPORT_C void CProfileSettingsContainer::EditItemL( TInt aIndex, TBool aCalledFr
             {
             UpdateSettingsL( EFalse );  // hide 3DEcho if 3DEffect is off
             }
+        
+        if ( vibratingAlert != iCopyProfile->iVibratingAlert )
+          	{
+          	UpdateSettingsL( EFalse ); //hide emailVibrating alert if vibrating alert is off
+           	}
         }
     // If the setting is an external (= only in Tones View):
     iExternalSettingsHandler.StoreIfChangedL( identifier );
