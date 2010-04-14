@@ -74,6 +74,10 @@
 //l: list_setting_pane_t1
 #define qtn_mode_vibrating_alert    "Vibrating alert"
 
+//d: Profile settings list item for email vibrating alert
+//l: list_setting_pane_t1
+#define qtn_profiles_email_vibra    "Email Vibrating alert"
+
 //d: Profile settings list item for keypad tones
 //l: list_setting_pane_t1
 #define qtn_mode_keypad_volume      "Keypad tones"
@@ -272,6 +276,16 @@
 //l: list_set_graphic_pane_t1
 //r:3.0
 #define qtn_mode_vibrating_alert_off	"Off"
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+//r:3.0
+#define qtn_mode_email_vibra_on	  "On"
+
+//d: Profile Settings Item Edit - setting selection data
+//l: list_set_graphic_pane_t1
+//r:3.0
+#define qtn_mode_email_vibra_off   "Off"
 
 // LOC STRINGS FOR POC SETTING
 
