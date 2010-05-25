@@ -22,7 +22,7 @@
 
 #include    <aknnotewrappers.h>
 #include    <MProfilesNamesArray.h>
-#include    <ProfileSettingsView.rsg>
+#include    <profilesettingsview.rsg>
 #include	<StringLoader.h>
 
 #include    "CProfileEngineHandler.h"

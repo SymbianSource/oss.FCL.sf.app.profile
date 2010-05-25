@@ -23,7 +23,7 @@
 #include "CProfilesGSTonesPluginSettingsHandler.h"
 #include "ProfilesDebug.h"
 #include "ProfilesGSTonesPlugin.hrh"
-#include <ProfilesGSTonesPluginRsc.rsg>
+#include <profilesgstonespluginrsc.rsg>
 #include <CProfileNaviPaneContainer.h>
 
 // Includes from Profiles Settings View:

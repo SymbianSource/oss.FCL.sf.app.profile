@@ -26,7 +26,7 @@
 #include <StringLoader.h>
 #include <CPbkContactEngine.h>
 #include <CPbkContactChangeNotifier.h>
-#include <ProfileSettingsView.rsg>
+#include <profilesettingsview.rsg>
 
 #include "CProfileAlertForSettingPage.h"
 

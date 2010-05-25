@@ -28,7 +28,7 @@
 #include    <CProfileEngineHandler.h>
 #include    <CProfileIndexHandler.h>
 #include    <CProfileTabHandler.h>
-#include    <ProfileApp.rsg>
+#include    <profileapp.rsg>
 
 #include    "ProfilePanics.h"
 #include    "CProfileSettingsContainer.h"

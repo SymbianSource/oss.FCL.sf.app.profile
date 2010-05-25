@@ -43,7 +43,7 @@
 #include    <MProfileExtended.h>
 #include    <MProfilesNamesArray.h>
 #include    <Profile.hrh>
-#include    <ProfileApp.rsg>
+#include    <profileapp.rsg>
 #include 	<AknQueryDialog.h>
 
 #include    "CProfileMainContainer.h"

@@ -22,7 +22,7 @@
 
 #include <AknQueryDialog.h>
 #include <CFLDController.h>
-#include <ProfileSettingsView.rsg>
+#include <profilesettingsview.rsg>
 #include "CProfileStruct.h" // KProfileMaxProfileNameLength
 #include <apgcli.h>	// For RApaLsSession
 #include <bautils.h> // For BaflUtils

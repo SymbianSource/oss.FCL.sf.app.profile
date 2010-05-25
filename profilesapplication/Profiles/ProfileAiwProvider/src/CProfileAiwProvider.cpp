@@ -28,7 +28,7 @@
 #include <AiwCommon.hrh> // For KAiwCmdAssign
 #include <AiwCommon.h> // For MAiwNotifyCallback
 #include <barsread.h>	// For TResourceReader
-#include <ProfileAiwProviderResource.rsg> // For resource texts
+#include <profileaiwproviderresource.rsg> // For resource texts
 #include <data_caging_path_literals.hrh>
 #include <coemain.h> // CCoeEnv
 #include <ConeResLoader.h> // RConeResourceLoader

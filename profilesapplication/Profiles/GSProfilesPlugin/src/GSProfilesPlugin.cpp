@@ -20,7 +20,7 @@
 #include    "GSProfilesPlugin.h"
 #include    <gsparentplugin.h>
 #include    <gscommon.hrh>
-#include    <GSProfilesPluginRsc.rsg> // GUI Resource
+#include    <gsprofilespluginrsc.rsg> // GUI Resource
 #include    <gsprofilesplugin.mbg>
 #include    <gsprivatepluginproviderids.h>
 #include    <ProfileEngineSDKCRKeys.h>

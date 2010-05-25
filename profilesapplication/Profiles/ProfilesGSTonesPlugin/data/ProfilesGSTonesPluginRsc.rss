@@ -20,7 +20,6 @@
 NAME    TNVW // 4 letter ID
 
 //  INCLUDES
-//#include    "GSPrslnPlugin.loc"
 
 #include    <data_caging_paths_strings.hrh>
 #include    <bldvariant.hrh>
@@ -36,8 +35,8 @@ NAME    TNVW // 4 letter ID
 #include    <eikcore.rsg>
 #include    <uikon.rh>
 #include    "ProfilesGsTonesPlugin.hrh"
-#include    <ProfilesGsTonesPlugin.loc>
-#include    <ProfileApp.loc>
+#include    <profilesgstonesplugin.loc>
+#include    <profileapp.loc>
 // FileListModel path definitions
 #include <PathConfiguration.hrh>
 // FileListModel structure

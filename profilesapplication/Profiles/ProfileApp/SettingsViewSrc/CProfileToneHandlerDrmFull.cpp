@@ -26,7 +26,7 @@
 
 #include    <DRMHelper.h>
 #include    <DRMCommon.h>
-#include    <ProfileSettingsView.rsg>
+#include    <profilesettingsview.rsg>
 
 #ifdef RD_DRM_COMMON_INTERFACE_FOR_OMA_AND_WMDRM
 #include	<drmutility.h>

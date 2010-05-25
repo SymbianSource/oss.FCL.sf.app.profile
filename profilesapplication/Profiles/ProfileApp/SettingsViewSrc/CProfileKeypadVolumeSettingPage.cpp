@@ -24,7 +24,7 @@
 #include <aknsoundsystem.h>
 #include <StringLoader.h>	// For StringLoader
 #include <aknnotewrappers.h> // For CAknInformationNote
-#include <ProfileSettingsView.rsg>
+#include <profilesettingsview.rsg>
 
 // for power save mode handling
 #include <psmsettings.h>

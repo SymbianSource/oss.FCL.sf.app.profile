@@ -27,7 +27,7 @@
 #include <StringLoader.h>
 #include <centralrepository.h>
 #include <ProfileEngineInternalCRKeys.h>
-#include <ProfileSettingsView.rsg>
+#include <profilesettingsview.rsg>
 #include <data_caging_path_literals.hrh>
 #include <CLFContentListing.hrh>	// For TCLFMediaType::ECLFMediaTypeVideo
 #include <featdiscovery.h> // CFeatureDiscovery

@@ -22,7 +22,7 @@
 #include "ProfileSettingsView.hrh"
 
 #include <CFLDController.h>
-#include <ProfileSettingsView.rsg>
+#include <profilesettingsview.rsg>
 #include <apgcli.h>	// For RApaLsSession
 #include <bautils.h> // For BaflUtils
 #include <centralrepository.h>

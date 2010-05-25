@@ -24,7 +24,7 @@
 #include <Profile.hrh> // From Profile Engine
 #include <ProfileSettingsView.hrh>
 #include "ProfilesGSTonesPlugin.hrh"
-#include <ProfilesGSTonesPluginRsc.rsg>
+#include <profilesgstonespluginrsc.rsg>
 #include "MProfilesGSTonesPluginItemDataInterface.h"
 #include "ProfilesDebug.h"
 

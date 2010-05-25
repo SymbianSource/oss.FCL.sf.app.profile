@@ -18,7 +18,7 @@
 
 
 // INCLUDES
-#include <ProfileSettingsView.rsg>
+#include <profilesettingsview.rsg>
 #include <StringLoader.h>	// For StringLoader
 #include <aknnotewrappers.h> // For CAknInformationNote
 

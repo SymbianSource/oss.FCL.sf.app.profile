@@ -46,7 +46,7 @@
 #include    <MProfilesNamesArray.h>
 #include    <MProfileName.h>
 #include    <MProfileUtilitySingleton.h>
-#include    <ProfileSettingsView.rsg>
+#include    <profilesettingsview.rsg>
 #include    <AknGlobalNote.h>
 #include    <f32file.h>
 

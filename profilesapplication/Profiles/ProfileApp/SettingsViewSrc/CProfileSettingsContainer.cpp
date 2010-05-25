@@ -60,7 +60,7 @@
 #include    <MProfilesNamesArray.h>
 #include    <MProfileName.h>
 #include    <CProfileChangeNotifyHandler.h>
-#include    <ProfileSettingsView.rsg>
+#include    <profilesettingsview.rsg>
 #include 	<data_caging_path_literals.hrh>
 #include 	<centralrepository.h>
 #include    <settingsinternalcrkeys.h>

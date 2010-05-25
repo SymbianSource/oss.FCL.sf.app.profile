@@ -22,7 +22,7 @@ PRJ_PLATFORMS
     DEFAULT
 
 PRJ_EXPORTS
-../loc/ProfilesGSTonesPlugin.loc    APP_LAYER_LOC_EXPORT_PATH(ProfilesGSTonesPlugin.loc)
+../loc/ProfilesGSTonesPlugin.loc    APP_LAYER_LOC_EXPORT_PATH(profilesgstonesplugin.loc)
 
 PRJ_MMPFILES
 
