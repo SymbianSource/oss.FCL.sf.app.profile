@@ -26,7 +26,7 @@
 
 //  INCLUDES
 #include <f32file.h> // CBase, RFs
-#include <msssettingsobserver.h> // MSSSettingsObserver, RSSSettings
+#include <MSSSettingsObserver.h> // MSSSettingsObserver, RSSSettings
 #include <apmstd.h> // KMaxDataTypeLength
 #include <data_caging_path_literals.hrh>
 
