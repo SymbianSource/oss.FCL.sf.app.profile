@@ -1,0 +1,14 @@
+<PowerSaveModeConfig>
+	<Setting mode="1"><!-- PSM mode in multilevel power save mode -->
+		<SetItem key="1" type="0" value="0"></SetItem>  <!-- vibra -->
+		<SetItem key="2" type="0" value="0"></SetItem>  <!-- keypad volume -->
+		<SetItem key="3" type="0" value="0"></SetItem>  <!-- tactile feedback -->
+		<SetItem key="4" type="0" value="0"></SetItem>  <!-- audio feedback -->
+	</Setting>
+	<Setting mode="2"><!-- PSM mode in multilevel power save mode, not supported yet -->
+		<SetItem key="1" type="0" value="0"></SetItem>
+		<SetItem key="2" type="0" value="1"></SetItem>
+		<SetItem key="3" type="0" value="1"></SetItem>
+		<SetItem key="4" type="0" value="1"></SetItem>
+	</Setting>
+</PowerSaveModeConfig>

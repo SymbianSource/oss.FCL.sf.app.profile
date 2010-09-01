@@ -1,0 +1,37 @@
+/** Unused Enum scan
+-e???? +e749
+*/
+
+/** Unused header scan
+-e???? +e766
+*/
+
+/** standard lint check
+*/
+-w1 -e322
+
+/** define unicode
+-D_UNICODE
+*/
+
+/** Standard include directories */
+-i..\profileengine\doc
+-i..\profileengine\group
+-i..\profileengine\inc
+-i..\profileengine\src
+-i..\profileengine\EngInc
+-i..\profileengine\EngSrc
+-i..\profileapp\aif
+-i..\profileapp\doc
+-i..\profileapp\group
+-i..\profileapp\help
+-i..\profileapp\uisrc
+-i..\profileapp\settingsviewinc
+-i..\profileapp\settingsviewsrc
+-i\epoc32\include
+-i\epoc32\include\oem
+
+/** Examined application source directories */
+..\profileengine\EngSrc\*.cpp
+..\profileapp\uisrc\*.cpp
+..\profileapp\settingsviewsrc\*.cpp

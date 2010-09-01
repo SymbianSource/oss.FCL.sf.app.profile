@@ -1,0 +1,477 @@
+/*
+* Copyright (c) 2002 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Profiles Application resources
+*
+*/
+
+
+
+//  RESOURCE IDENTIFIER
+NAME    PROF
+
+//  INCLUDES
+#include <eikon.rh>
+#include <avkon.rh>
+#include <avkon.rsg>
+#include <avkon.loc>
+#include <avkon.mbg>
+#include <e32keys.h>
+#include <bldvariant.hrh>
+#include <appinfo.rh>
+#include <ProfileEng.hrh>
+#include <Profile.hrh>
+#include <profileapp.loc>
+#include <Profile.loc>
+#include "ProfileApp.hrh"
+#include <data_caging_paths_strings.hrh>
+
+//  RESOURCE DEFINITIONS
+
+RESOURCE RSS_SIGNATURE {}
+
+RESOURCE TBUF { buf = ""; }
+
+RESOURCE EIK_APP_INFO {}
+
+RESOURCE LOCALISABLE_APP_INFO r_profile_localisable_app_info
+    {
+    short_caption = qtn_apps_mode_grid;
+    caption_and_icon =
+        CAPTION_AND_ICON_INFO
+            {
+            caption = qtn_apps_mode_list;
+
+#ifdef __SCALABLE_ICONS
+
+            number_of_icons = 1;
+            icon_file = APP_BITMAP_DIR"\\ProfileApp_aif.mif";
+
+#else
+
+            number_of_icons = 2;
+            icon_file = APP_BITMAP_DIR"\\ProfileApp_aif.mbm";
+
+#endif // __SCALABLE_ICONS
+        };
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_main_view
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE AVKON_VIEW r_profile_main_view
+    {
+    menubar = r_profile_main_view_options_menubar;
+    cba = r_profile_main_view_cba;
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_settings_view
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE AVKON_VIEW r_profile_settings_view
+    {
+    menubar = r_profile_settings_view_options_menubar;
+    cba = r_profile_settings_view_cba;
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_main_view_options_menubar
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE MENU_BAR r_profile_main_view_options_menubar
+    {
+    titles =
+        {
+        MENU_TITLE { menu_pane = r_profile_main_view_options_menupane; }
+        };
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_main_view_context_specific_options_menubar
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE MENU_BAR r_profile_main_view_context_specific_options_menubar
+    {
+    titles =
+        {
+        MENU_TITLE { menu_pane = r_profile_main_view_context_specific_options_menupane; }
+        };
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_settings_view_options_menubar
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE MENU_BAR r_profile_settings_view_options_menubar
+    {
+    titles =
+        {
+        MENU_TITLE { menu_pane = r_profile_settings_view_options_menupane; }
+        };
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_main_view_cba
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE CBA r_profile_main_view_cba
+    {
+    flags = 0;
+    buttons =
+        {
+        CBA_BUTTON {id=EAknSoftkeyOptions; txt=text_softkey_option;},
+        CBA_BUTTON {id=EAknSoftkeyExit; txt=text_softkey_exit;},
+        CBA_BUTTON {id=EAknSoftkeyContextOptions; txt=text_softkey_option;}
+        };
+    }
+
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_main_view_cba_2
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE CBA r_profile_main_view_cba_2
+    {
+    flags = 0;
+    buttons =
+        {
+        CBA_BUTTON {id=EAknSoftkeyOptions; txt=text_softkey_option;},
+        CBA_BUTTON {id=EAknSoftkeyBack; txt=text_softkey_back;},
+        CBA_BUTTON {id=EAknSoftkeyContextOptions; txt=text_softkey_option;}
+        };
+    }
+
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_settings_view_cba
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE CBA r_profile_settings_view_cba
+    {
+    flags = 0;
+    buttons =
+        {
+        CBA_BUTTON {id=EAknSoftkeyOptions; txt=text_softkey_option;},
+        CBA_BUTTON {id=EAknSoftkeyBack; txt=text_softkey_back;},
+        CBA_BUTTON {id=EAknSoftkeyChange; txt=qtn_msk_change;}
+        };
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_settings_view_cba_idle
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE CBA r_profile_settings_view_cba_idle
+    {
+    flags = 0;
+    buttons =
+        {
+        CBA_BUTTON {id=EAknSoftkeyOptions; txt=text_softkey_option;},
+        CBA_BUTTON {id=EAknSoftkeyExit; txt=text_softkey_exit;},
+        CBA_BUTTON {id=EAknSoftkeyChange; txt=qtn_msk_change;}
+        };
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_main_view_options_menupane
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE MENU_PANE r_profile_main_view_options_menupane
+    {
+    items =
+        {
+       // MENU_ITEM { command = EProfileCmdActivate; txt = qtn_mode_activate; },
+        //MENU_ITEM { command = EProfileCmdPersonalise; txt = qtn_mode_personalise; },
+   		//MENU_ITEM { command = EProfileCmdTimed; txt = qtn_profiles_options_timed; },
+#ifdef __DYNAMIC_PROFILES
+        MENU_ITEM { command = EProfileCmdCreateNew; txt = qtn_profiles_options_create_new; },
+       // MENU_ITEM { command = EProfileCmdDelete; txt = qtn_profiles_options_delete; },
+#endif // __DYNAMIC_PROFILES
+        MENU_ITEM { command = EAknCmdHelp; txt = qtn_options_help; },
+        //MENU_ITEM { command = EEikCmdExit; txt = qtn_options_exit; }
+        MENU_ITEM { command = EAknCmdExit; txt = qtn_options_exit; }
+        };
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_main_view_context_specific_options_menupane
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE MENU_PANE r_profile_main_view_context_specific_options_menupane
+    {
+    items =
+        {
+        MENU_ITEM { command = EProfileCmdActivate; txt = qtn_mode_activate; },
+        MENU_ITEM { command = EProfileCmdPersonalise; txt = qtn_mode_personalise; },
+        MENU_ITEM { command = EProfileCmdDelete; txt = qtn_profiles_options_delete; },
+   		MENU_ITEM { command = EProfileCmdTimed; txt = qtn_profiles_options_timed; }
+        };
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_settings_view_options_menupane
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE MENU_PANE r_profile_settings_view_options_menupane
+    {
+    items =
+        {
+        //MENU_ITEM { command = EProfileCmdChange; txt = qtn_mode_change; },
+        MENU_ITEM { command = EAknCmdHelp; txt = qtn_options_help; },
+        //MENU_ITEM { command = EEikCmdExit; txt = qtn_options_exit; }
+        MENU_ITEM { command = EAknCmdExit; txt = qtn_options_exit; }
+        };
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_leave_offline_confirmation_query
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE DIALOG r_profile_leave_offline_confirmation_query
+    {
+    flags = EGeneralQueryFlags;
+    buttons = R_AVKON_SOFTKEYS_YES_NO;
+    items =
+        {
+        DLG_LINE
+            {
+            type = EAknCtQuery;
+            id = EGeneralQuery;
+            control = AVKON_CONFIRMATION_QUERY
+                {
+                layout = EConfirmationQueryLayout;
+                label = qtn_leave_offline_mode_query;
+                };
+            }
+        };
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_delete_confirmation_query
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE DIALOG r_profile_delete_confirmation_query
+    {
+    flags = EGeneralQueryFlags;
+    buttons = R_AVKON_SOFTKEYS_YES_NO;
+    items=
+        {
+        DLG_LINE
+            {
+            type = EAknCtQuery;
+            id = EGeneralQuery;
+            control = AVKON_CONFIRMATION_QUERY
+                {
+                layout = EConfirmationQueryLayout;
+                label = qtn_profiles_conf_delete;
+                };
+            }
+        };
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_text_title
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE TBUF r_profile_text_title { buf = qtn_mode_profiles; }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_text_insert_sim
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE TBUF r_profile_text_insert_sim { buf = qtn_su_note_insert_sim; }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_text_error_maximum
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE TBUF r_profile_text_error_maximum { buf = qtn_profiles_error_maximum; }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_text_delete_error
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE TBUF r_profile_text_delete_error { buf = qtn_profiles_delete_error; }
+
+// ---------------------------------------------------------
+//
+// r_profile_time_query
+// ?description
+//
+// ---------------------------------------------------------
+//
+RESOURCE DIALOG r_profile_time_query
+    {
+    flags=EGeneralQueryFlags;
+    buttons=R_AVKON_SOFTKEYS_OK_CANCEL;
+    items=
+        {
+        DLG_LINE
+            {
+            type=EAknCtQuery;
+            id=EGeneralQuery;
+            control = AVKON_DATA_QUERY
+                {
+                layout = ETimeLayout;
+                label = text_popupfield_prompt_for_time;
+                control = TIME_EDITOR
+                    {
+                    minTime= TIME {second=0;minute=0;hour=0;};
+                    maxTime= TIME {second=59;minute=59;hour=23;};
+                    flags=EEikTimeWithoutSecondsField;
+                    };
+                };
+            }
+        };
+    }
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_setting_expiry_time
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE TBUF r_profile_setting_expiry_time { buf = qtn_profiles_setting_expiry_time; }    
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_conf_singular
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE TBUF r_profile_conf_singular { buf = qtn_profiles_conf_singular; } 
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_conf_plural
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE TBUF r_profile_conf_plural { buf = qtn_profiles_conf_plural; } 
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_conf_hour_sev_min
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE TBUF r_profile_conf_hour_sev_min { buf = qtn_profiles_conf_hour_sev_min; } 
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_conf_sev_hours_min
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE TBUF r_profile_conf_sev_hours_min { buf = qtn_profiles_conf_sev_hours_min; } 
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_error_timing_active_profile
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE TBUF r_profile_error_timing_active_profile { buf = qtn_profiles_error_timing_active_profile; } 
+
+// -----------------------------------------------------------------------------
+//
+// r_profile_confirm_timed_query
+// ?description
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE DIALOG r_profile_confirm_timed_query
+    {
+    flags = EGeneralQueryFlags;
+    buttons = R_AVKON_SOFTKEYS_OK_EMPTY;
+    items =
+        {
+        DLG_LINE
+            {
+            type = EAknCtQuery;
+            id = EGeneralQuery;
+            control = AVKON_CONFIRMATION_QUERY
+                {
+                layout = EConfirmationQueryLayout;
+                label = "";
+                bmpfile = AVKON_BITMAP_FILE;
+                bmpid = EMbmAvkonQgn_note_info;
+                bmpmask = EMbmAvkonQgn_note_info_mask;
+                };
+            }
+        };
+    } 
+
+// End of File

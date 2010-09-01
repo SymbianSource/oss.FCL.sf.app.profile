@@ -1,0 +1,5 @@
+EXPORTS
+	_Z16CreateTestSuiteLv @ 1 NONAME
+	_ZTI21T_CProfileToneHandler @ 2 NONAME ; #<TI>#
+	_ZTV21T_CProfileToneHandler @ 3 NONAME ; #<VT>#
+

@@ -1,0 +1,27 @@
+EXPORTS
+	?AllowedToChange@CProfileSettingsContainer@@QBEHH@Z @ 1 NONAME ; int CProfileSettingsContainer::AllowedToChange(int) const
+	?CurrentProfileIndex@CProfileIndexHandler@@QBEHXZ @ 2 NONAME ; int CProfileIndexHandler::CurrentProfileIndex(void) const
+	?EditItemL@CProfileSettingsContainer@@UAEXHH@Z @ 3 NONAME ; void CProfileSettingsContainer::EditItemL(int, int)
+	?Engine@CProfileEngineHandler@@QBEPAVMProfileEngineExtended@@XZ @ 4 NONAME ; class MProfileEngineExtended * CProfileEngineHandler::Engine(void) const
+	?IdArray@CProfileEngineHandler@@QBEPAVMProfilesNamesArray@@XZ @ 5 NONAME ; class MProfilesNamesArray * CProfileEngineHandler::IdArray(void) const
+	?IdForIndex@CProfileEngineHandler@@QBEHH@Z @ 6 NONAME ; int CProfileEngineHandler::IdForIndex(int) const
+	?NewL@CProfileEngineHandler@@SAPAV1@XZ @ 7 NONAME ; class CProfileEngineHandler * CProfileEngineHandler::NewL(void)
+	?NewL@CProfileIndexHandler@@SAPAV1@AAVCProfileEngineHandler@@@Z @ 8 NONAME ; class CProfileIndexHandler * CProfileIndexHandler::NewL(class CProfileEngineHandler &)
+	?NewL@CProfileSettingsContainer@@SAPAV1@AAVCAknView@@AAVCProfileEngineHandler@@PAVCProfileIndexHandler@@PAVCProfileTabHandler@@PAVCAknTitlePane@@@Z @ 9 NONAME ; class CProfileSettingsContainer * CProfileSettingsContainer::NewL(class CAknView &, class CProfileEngineHandler &, class CProfileIndexHandler *, class CProfileTabHandler *, class CAknTitlePane *)
+	?NewL@CProfileTabHandler@@SAPAV1@AAVCProfileEngineHandler@@AAVCProfileIndexHandler@@AAVCAknNavigationControlContainer@@@Z @ 10 NONAME ; class CProfileTabHandler * CProfileTabHandler::NewL(class CProfileEngineHandler &, class CProfileIndexHandler &, class CAknNavigationControlContainer &)
+	?NewL@CProfileToneHandler@@SAPAV1@XZ @ 11 NONAME ; class CProfileToneHandler * CProfileToneHandler::NewL(void)
+	?NewLC@CProfileToneHandler@@SAPAV1@XZ @ 12 NONAME ; class CProfileToneHandler * CProfileToneHandler::NewLC(void)
+	?ReadIdArrayL@CProfileEngineHandler@@QAEXXZ @ 13 NONAME ; void CProfileEngineHandler::ReadIdArrayL(void)
+	?SetActiveProfileRingingToneL@CProfileToneHandler@@QAEHABVTDesC16@@@Z @ 14 NONAME ; int CProfileToneHandler::SetActiveProfileRingingToneL(class TDesC16 const &)
+	?SetCurrentProfileIndex@CProfileIndexHandler@@QAEXH@Z @ 15 NONAME ; void CProfileIndexHandler::SetCurrentProfileIndex(int)
+	?SetProfileToneL@CProfileToneHandler@@QAEHHW4TProfileTones@@ABVTDesC16@@@Z @ 16 NONAME ; int CProfileToneHandler::SetProfileToneL(int, enum TProfileTones, class TDesC16 const &)
+	?SetToneForAllProfilesL@CProfileToneHandler@@QAEHW4TProfileTones@@ABVTDesC16@@@Z @ 17 NONAME ; int CProfileToneHandler::SetToneForAllProfilesL(enum TProfileTones, class TDesC16 const &)
+	?TabGroup@CProfileTabHandler@@QBEPAVCAknTabGroup@@XZ @ 18 NONAME ; class CAknTabGroup * CProfileTabHandler::TabGroup(void) const
+	?NewL@CProfileSettingsContainer@@SAPAV1@AAVMProfileViewHandler@@AAVCProfileEngineHandler@@AAVMProfileExternalSettingsHandler@@PAVCProfileIndexHandler@@PAVCProfileTabHandler@@PAVCAknTitlePane@@@Z @ 19 NONAME ; class CProfileSettingsContainer * CProfileSettingsContainer::NewL(class MProfileViewHandler &, class CProfileEngineHandler &, class MProfileExternalSettingsHandler &, class CProfileIndexHandler *, class CProfileTabHandler *, class CAknTitlePane *)
+	?NewL@CProfileSettingsContainer@@SAPAV1@AAVMProfileViewHandler@@AAVCProfileEngineHandler@@AAVMProfileExternalSettingsHandler@@PAVCProfileIndexHandler@@PAVCProfileTabHandler@@PAVCAknTitlePane@@H@Z @ 20 NONAME ; class CProfileSettingsContainer * CProfileSettingsContainer::NewL(class MProfileViewHandler &, class CProfileEngineHandler &, class MProfileExternalSettingsHandler &, class CProfileIndexHandler *, class CProfileTabHandler *, class CAknTitlePane *, int)
+	?ItemEdited@CProfileSettingsContainer@@QBEHXZ @ 21 NONAME ; int CProfileSettingsContainer::ItemEdited(void) const
+	?SetProfileToneNotCheckL@CProfileToneHandler@@QAEHHW4TProfileTones@@ABVTDesC16@@@Z @ 22 NONAME ; int CProfileToneHandler::SetProfileToneNotCheckL(int, enum TProfileTones, class TDesC16 const &)
+	?SetNaviPaneTextL@CProfileNaviPaneContainer@@QAEXABVTDesC16@@@Z @ 23 NONAME ; void CProfileNaviPaneContainer::SetNaviPaneTextL(class TDesC16 const &)
+	?SetNaviPaneTextL@CProfileNaviPaneContainer@@QAEXXZ @ 24 NONAME ; void CProfileNaviPaneContainer::SetNaviPaneTextL(void)
+	?NewL@CProfileNaviPaneContainer@@SAPAV1@AAVCEikStatusPane@@AAVCProfileEngineHandler@@@Z @ 25 NONAME ; class CProfileNaviPaneContainer * CProfileNaviPaneContainer::NewL(class CEikStatusPane &, class CProfileEngineHandler &)
+
