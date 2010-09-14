@@ -472,6 +472,7 @@ void CProfileMainView::DoCmdTimedL()
 			CAknErrorNote* note = new( ELeave ) CAknErrorNote( ETrue );
 			note->ExecuteLD( *errorText );
 			CleanupStack::PopAndDestroy( errorText );
+            CleanupStack::PopAndDestroy( expiryTime );
     		return;
     		}
     	
