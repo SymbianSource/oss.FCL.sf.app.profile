@@ -32,7 +32,7 @@ NAME    PROF
 #include <ProfileEng.hrh>
 #include <Profile.hrh>
 #include <profileapp.loc>
-#include <Profile.loc>
+#include <profile.loc>
 #include "ProfileApp.hrh"
 #include <data_caging_paths_strings.hrh>
 

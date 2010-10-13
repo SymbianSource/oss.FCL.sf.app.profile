@@ -205,13 +205,6 @@ TBool CProfilePlayingVolumeSettingPage::OkToExitL(TBool aAccept)
 //
 void CProfilePlayingVolumeSettingPage::CheckRingingToneTypeL()
 	{
-    // If the preview tone is not NULL, delete it.
-    if ( iPreviewTone )
-        {
-        delete iPreviewTone;
-        iPreviewTone = NULL;
-        }
-    
 	// Get default tone from cenrep
 	TFileName defaultTone;
 	CRepository* cenrep = CRepository::NewL( KCRUidProfileEngine );

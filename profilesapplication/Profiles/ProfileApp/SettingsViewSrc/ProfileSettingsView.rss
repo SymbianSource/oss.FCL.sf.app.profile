@@ -22,7 +22,7 @@ NAME    PRO2
 
 // INTERNAL INCLUDES
 #include <profileapp.loc>
-#include <Profile.loc>
+#include <profile.loc>
 #include "ProfileSettingsView.hrh"
 #include "ProfileInternal.hrh"
 
